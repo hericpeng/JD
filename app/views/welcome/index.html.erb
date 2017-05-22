@@ -1,101 +1,424 @@
-<div class="col-md-12">
-    <div class="row box">
-        <div class="box-inner col-md-6 col-md-offset-3">
-            <h1 class="title">18K Offer</h1>
-            <p class="slogan">18K Offer 是一个提供18K薪水工作机会的求职网站。
-         <br>
-                我们希望借由这个网站，能让大家找到且应征上高薪且优质的工作。
-         <br>
-                凭借自己的努力和天份也会变 Winner
-       </p>
-            <p class="lead">
-                <%= link_to '马上应征', products_path, class: 'btn btn-danger' %>
-            </p>
-        </div>
-    </div>
-</div>
-<section id="about" class="sec-about">
-    <div class="container">
-        <h1>About Us</h1>
-        <hr />
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-                <p>Hi, 欢迎来到创造工坊，我们为寻找天才设计师而存在，在这里你可以根据名称、城市、职位来搜索自己的心仪的工作。
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+</head>
 
-                     我们致力于为访客提供高匹配率的工作和专业的简历撰写指导。
+    <div id="bootstrap-touch-slider" class="carousel bs-slider slide  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+            <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper For Slides -->
+        <div class="carousel-inner" role="listbox">
+            <!-- Third Slide -->
+            <div class="item active">
+                <!-- Slide Background -->
+                <img src="https://ww4.sinaimg.cn/large/006tNc79gy1fftcz6mb53j31660k83zx.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                <div class="bs-slider-overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <!-- Slide Text Layer -->
 
-                     开启你的天才设计之旅吧！
-           </div>
-            </div>
-        </div>
-    </section>
-    <div class="content-section-a">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">查看属于你的创造岗位</h2>
-                    <p class="lead">创造工坊可以根据需求，制定出专属的Job</p>
-                    <p class="lead">支持名称、城市、公司搜索</p>
-                    <p class="lead">高匹配率帮您节约时间</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <%= image_tag 'pic-1.jpg', class: 'img-responsive' %>
+                          <div class="slide-text slide_style_right">
+                            <h1 data-animation="animated zoomInRight">通往财富自由之路</h1>
+                            <p data-animation="animated fadeInLeft">人人都至少有一次机会。</p>
+                            <a href="https://h5.sao.cn/product/detail?alias=onhnfsdtybxb" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">课程介绍</a>
+                            <a href="https://h5.sao.cn/product/detail?alias=onhnfsdtybxb" target="_blank"  class="btn btn-primary" data-animation="animated fadeInRight">订购课程</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="content-section-b">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">撰写你的专业简历</h2>
-                    <p class="lead">根据自己的心仪的Job撰写自己的高匹配度的天才简历</p>
-                    <p class="lead">如果不知道如何写出专业的建立，那可以去全栈朱英楠师兄创作的 <a target="_blank" href="http://www.jianliheike.com">简历黑客</a> 看看哦！</p>
-                    <p class="lead">超多的专业简历模板等着你哦！</p>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <%= image_tag 'pic-2.jpg', class: 'img-responsive' %>
+            <!-- End of Slide -->
+            <!-- Second Slide -->
+            <div class="item">
+                <!-- Slide Background -->
+                <img src="https://ww3.sinaimg.cn/large/006tKfTcgy1fftu0au8k3j31kw0u21ky.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                <div class="bs-slider-overlay"></div>
+                <!-- Slide Text Layer -->
+                <div class="slide-text slide_style_left">
+                    <h1 data-animation="animated flipInX">极速读书会</h1>
+                    <p data-animation="animated lightSpeedIn">这也许是你参加的最后一个读书会。</p>
+                    <a href="https://speedread.club" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">课程介绍</a>
+                    <a href="https://speedread.club" target="_blank"  class="btn btn-primary" data-animation="animated fadeInDown">订购课程</a>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="content-section-a">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">踏上自己的天才创造旅程<br>
-                    </h2>
-                    <p class="lead">再也不会因为工作而烦恼，愿你每一天与快乐为伴。</p>
-                    <p class="lead">享受创造，享受生活。</p>
+            <!-- End of Slide -->
+            <!-- Third Slide -->
+            <!-- <div class="item">
+                <img src="https://ww4.sinaimg.cn/large/006tKfTcgy1ffttfqgf60j30go06r3yw.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                <div class="bs-slider-overlay"></div>
+
+                  <div class="slide-text slide_style_center">
+                    <h1 data-animation="animated zoomInLeft">心流学习法</h1>
+                    <p data-animation="animated fadeInRight">快速入门任何专业技能。</p>
+                    <a href="https://floating-earth-63565.herokuapp.com" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">课程介绍</a>
+                    <a href="https://floating-earth-63565.herokuapp.com" target="_blank" class="btn btn-primary" data-animation="animated fadeInRight">订购课程</a>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <%= image_tag 'pic-3.jpg', class: 'img-responsive' %>
-                </div>
-            </div>
+            </div> -->
+            <!-- End of Slide -->
         </div>
+        <!-- End of Wrapper For Slides -->
+        <!-- Left Control -->
+        <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <!-- Right Control -->
+        <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
+     <!-- End  bootstrap-touch-slider Slider -->
 
-
-
-
-<!-- navbar的js效果 -->
-
+<!-- 页面飘动和文字飘入的js -->
 <script>
-  $(document).ready(function(){
-     $(".navbar-fixed-top").css("background-color", "transparent"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-     $(".navbar-fixed-top").css("border-color", "transparent"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-  $(window).scroll(function() { // check if scroll event happened
-     if ($(document).scrollTop() > 30) { // check if user scrolled more than 50 from top of the browser window
-       $(".navbar-fixed-top").css("background-color", "#fff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-     } else {
-       $(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent
-     }
-   });
-  });
+    $('.carousel').carousel({
+                   interval: 3000 //修改页面的更换速度
+               })
+
+               $('#bootstrap-touch-slider').bsTouchSlider();
 </script>
+<script>
+    $(document).ready(function () {
+               $('.material-button-toggle').click(function () {
+                   $(this).toggleClass('open');
+                   $('.option').toggleClass('scale-on');
+               });
+              });
+</script>
+<!-- 页面飘动和文字飘入的js结束 -->
+
+
+<!-- 流动字体 -->
+    <!-- <div class="container">
+        <div class="row">
+            <svg viewBox="0 0 960 300">
+                <symbol id="s-text">
+                    <text text-anchor="middle" x="50%" y="60%">认知学院 </text> -->
+                    <!-- 这里可以调整字体的xy轴 -->
+                <!-- </symbol>
+                <g class = "g-ants">
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                </g>
+            </svg>
+        </div>
+    </div> -->
+
+    <!-- 流动字体结束 -->
+
+  <!-- 翻转小卡片  开始 -->
+  <div class="container-fluid">
+  </div>
+  <div class="container">
+
+        <h1 style="text-align:center;margin:100px 0px;">大咖课程</h1>
+  	<div class="row">
+  	<div class="col-sm-10 col-sm-offset-1">
+  		<div class="col-md-4 col-sm-6">
+  			<div class="card-container">
+  				<div class="card">
+  					<div class="front">
+  						<div class="cover">
+  						<img src="https://www.clipartsgram.com/image/124089475-california-beaches-tumblr-wallpaper-3.jpg"/>
+  						</div>
+  						<div class="user">
+  						<img class="img-circle" src="http://www.outbrain.com/risingstars/wp-content/uploads/708x708-RS-Profile-Ashley-Callahan-400x400.jpg"/>
+  						</div>
+  						<div class="content">
+  						<div class="main">
+  						<h3 class="name">《通往财富自由之路》</h3>
+  						<h5 class="profession">李笑来</h5>
+  						<p class="text-center"></br>"人人都至少有一次机会！"</p>
+  						</div>
+  						<div class="footersmall">
+                <div class="rating">
+    						<i class="fa fa-mail-forward"></i> 查看详情
+    						</div>
+  						</div>
+  						</div>
+  					</div> <!-- end front panel -->
+  					<div class="back">
+  						<div class="header">
+  						<h4 class="profession">课程简介</h4>
+  						</div>
+  						<div class="content">
+  						<div class="main">
+  						<!-- <h4 class="text-center">Job Description</h4> -->
+  						<p class="text-center">在这个课程里，亿万富翁李笑来带着大家每周更新一个观念，一年 52 次深入探讨，请大家上车，一起赶路，通往财富自由。</p>
+
+  						<div class="stats-container">
+  						<div class="stats">
+  						<h4>235000</h4>
+  						<p>
+  						浏览
+  						</p>
+  						</div>
+  						<div class="stats">
+  						<h4>155581</h4>
+  						<p>
+  						订阅
+  						</p>
+  						</div>
+  						<div class="stats">
+  						<h4>340</h4>
+  						<p>
+  						课程
+  						</p>
+  						</div>
+  						</div>
+
+  						</div>
+  						</div>
+  						<div class="footersmall">
+  						<div class="social-links text-center">
+
+  						<a href="https://h5.sao.cn/product/detail?alias=onhnfsdtybxb">订购课程</a>
+
+  						</div>
+  						</div>
+  					</div> <!-- end back panel -->
+  				</div> <!-- end card -->
+  			</div> <!-- end card-container -->
+  		</div> <!-- end col sm 3 -->
+  <!-- <div class="col-sm-1"></div> -->
+  <div class="col-md-4 col-sm-6">
+  <div class="card-container">
+  	<div class="card">
+  		<div class="front">
+  			<div class="cover">
+  				<img src="https://www.clipartsgram.com/image/129556292-kyz84k3.jpg"/>
+  			</div>
+  			<div class="user">
+  				<img class="img-circle" src="https://www2.mmu.ac.uk/media/mmuacuk/style-assets/images/r-research/profile-Zeyad.jpg"/>
+  			</div>
+  			<div class="content">
+  				<div class="main">
+  					<h3 class="name">《极速读书法》</h3>
+  					<h5 class="profession">Xdite</h5>
+  					<p class="text-center"></br>"你这辈子参加的最后一个读书会。"</p>
+  				</div>
+  				<div class="footersmall">
+            <div class="rating">
+            <i class="fa fa-mail-forward"></i> 查看详情
+            </div>
+  				</div>
+  			</div>
+  		</div> <!-- end front panel -->
+  		<div class="back">
+  			<div class="header">
+          <h4 class="profession">课程简介</h4>
+  			</div>
+  			<div class="content">
+  				<div class="main">
+  					<!-- <h4 class="text-center">Job Description</h4> -->
+  					<p class="text-center">首个真正具备「读书会」效果的「读书会」，独家上瘾式读书法让人停不下来。
+              和数万人共同享受大脑升级的极致快感。告别低效无用读书，立即产生行动改变。在这里，人人都有极速阅读能力。</p>
+
+  					<div class="stats-container">
+  						<div class="stats">
+  						<h4>12000</h4>
+  						<p>
+  						浏览
+  						</p>
+  						</div>
+  						<div class="stats">
+  						<h4>5060</h4>
+  						<p>
+  						订阅
+  						</p>
+  						</div>
+  						<div class="stats">
+  						<h4>93</h4>
+  						<p>
+  						课程
+  						</p>
+  						</div>
+  					</div>
+
+  				</div>
+  			</div>
+  			<div class="footersmall">
+  				<div class="social-links text-center">
+  					<a href="https://speedread.club">订购课程</a>
+  				</div>
+  			</div>
+  		</div> <!-- end back panel -->
+  	</div> <!-- end card -->
+  </div> <!-- end card-container -->
+  </div> <!-- end col sm 3 -->
+  <!-- <div class="col-sm-1"></div> -->
+  <div class="col-md-4 col-sm-6">
+  			<div class="card-container">
+  				<div class="card">
+  					<div class="front">
+  						<div class="cover">
+  						<img src="http://www.hdimageson.com/wp-content/uploads/2016/05/beach-images-tumblr-300x188.jpg"/>
+  						</div>
+  						<div class="user">
+  						<img class="img-circle" src="https://1.bp.blogspot.com/-aruLLVlXyJM/V_t-TxTncZI/AAAAAAAAJ3k/hnQKKVmKuOY_awf1nHGTsukGfw4qrde-gCLcB/s400/2.jpg"/>
+  						</div>
+  						<div class="content">
+  						<div class="main">
+  						<h3 class="name">《心流学习法》</h3>
+  						<p class="profession">赵龙</p>
+              <p class="text-center"></br>"快速入门任何职业技能"</p>
+  						</div>
+  						<div class="footersmall">
+  						<div class="rating">
+  						<i class="fa fa-mail-forward"></i> 查看详情
+  						</div>
+  						</div>
+  						</div>
+  					</div> <!-- end front panel -->
+  					<div class="back">
+  						<div class="header">
+                <h4 class="profession">课程简介</h4>
+  						</div>
+  						<div class="content">
+  						<div class="main">
+  						<!-- <h4 class="text-center">Job Description</h4> -->
+  						<p class="text-center">关于学习方法的知识，通过心流学习法可以让你在短时间内进入学习状态，高效利用时间，大量压缩准备时间，达到快速学习的目的。</p>
+
+  						<div class="stats-container">
+  						<div class="stats">
+  						<h4>530</h4>
+  						<p>
+  						浏览
+  						</p>
+  						</div>
+  						<div class="stats">
+  						<h4>120</h4>
+  						<p>
+  						订阅
+  						</p>
+  						</div>
+  						<div class="stats">
+  						<h4>11</h4>
+  						<p>
+  						课程
+  						</p>
+  						</div>
+  						</div>
+
+  						</div>
+  						</div>
+  						<div class="footersmall">
+  						<div class="social-links text-center">
+                <a href="https://floating-earth-63565.herokuapp.com">订购课程</a>
+  						</div>
+  						</div>
+  					</div> <!-- end back panel -->
+  				</div> <!-- end card -->
+  			</div> <!-- end card-container -->
+  		</div> <!-- end col-sm-3 -->
+  		</div> <!-- end col-sm-10 -->
+  	</div> <!-- end row -->
+  	<div class="space-200"></div>
+  </div><
+
+  <!-- 翻转小卡片 结束 -->
+
+
+
+
+
+
+  <section id="about" class="sec-about">
+      <div class="container">
+          <h1 >猎人学院</h1>
+          <hr />
+          <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                  <p>
+                    <a href="#" class="typewrite textstyle" data-period="2000" data-type='[ "您好，欢迎来到猎人学院，只为你找到最好的学习课程，在这里你可以学习到学习的方法、认知科学课程、心流学习法等，</br >总之，这里有一切好的课程。猎人学院期待您的加入！" ]'>
+                    <span class="wrap"></span>
+                    </a>
+                  </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+  <!-- 页面慢慢打字的效果 开始-->
+  <script>
+  var TxtType = function(el, toRotate, period) {
+          this.toRotate = toRotate;
+          this.el = el;
+          this.loopNum = 0;
+          this.period = parseInt(period, 10) || 2000;
+          this.txt = '';
+          this.tick();
+          this.isDeleting = false;
+      };
+
+      TxtType.prototype.tick = function() {
+          var i = this.loopNum % this.toRotate.length;
+          var fullTxt = this.toRotate[i];
+
+          if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1000);
+          } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1.5);
+          }
+
+          this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+          var that = this;
+          var delta = 200 - Math.random() * 100;
+
+          if (this.isDeleting) { delta /= 2; }
+
+          if (!this.isDeleting && this.txt === fullTxt) {
+          delta = this.period;
+          this.isDeleting = true;
+          } else if (this.isDeleting && this.txt === '') {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+          }
+
+          setTimeout(function() {
+          that.tick();
+          }, delta);
+      };
+
+      window.onload = function() {
+          var elements = document.getElementsByClassName('typewrite');
+          for (var i=0; i<elements.length; i++) {
+              var toRotate = elements[i].getAttribute('data-type');
+              var period = elements[i].getAttribute('data-period');
+              if (toRotate) {
+                new TxtType(elements[i], JSON.parse(toRotate), period);
+              }
+          }
+          // INJECT CSS
+          var css = document.createElement("style");
+          css.type = "text/css";
+          css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #222222}";
+          document.body.appendChild(css);
+      };
+  </script>
+  <!-- 页面慢慢打字的效果 结束-->
+
+
+    <!-- navbar的js效果 -->
+    <script>
+        $(document).ready(function(){
+             $(".navbar-fixed-top").css("background-color", "#fff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+             $(".navbar-fixed-top").css("border-color", "#fff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+          $(window).scroll(function() { // check if scroll event happened
+             if ($(document).scrollTop() > 30) { // check if user scrolled more than 50 from top of the browser window
+               $(".navbar-fixed-top").css("background-color", "#fff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+             } else {
+               $(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent
+             }
+           });
+          });
+    </script>
