@@ -6,19 +6,17 @@
     <div class="card card-container">
     <h2 class='login_title text-center'>Sign up</h2>
     <hr>
+
     <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= f.error_notification %>
-
-        <form class="form-signin">
+        <div class="form-signin">
           <%= f.input :email, required: true, autofocus: true, label:"邮箱" %>
           <%= f.input :password, required: true, label:"密码", hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
           <%= f.input :password_confirmation, required: true, label:"密码确认" %>
 
-
           <%= f.button :submit, "注册" %>
-        </form><!-- /form -->
+        </div><!-- /form -->
      <% end %>
 
-     <%= render "devise/shared/links" %>
     </div><!-- /card-container -->
 </div><!-- /container -->
