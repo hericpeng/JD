@@ -1,0 +1,22 @@
+<script src="https://use.typekit.net/ayg4pcz.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+<div class="container">
+<h1 class="welcome text-center">Welcome to <br> Ice Code</h1>
+    <div class="card card-container">
+    <h2 class='login_title text-center'>Sign up</h2>
+    <hr>
+
+    <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= f.error_notification %>
+        <div class="form-signin">
+          <%= f.input :email, required: true, autofocus: true, label:"邮箱" %>
+          <%= f.input :password, required: true, label:"密码", hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
+          <%= f.input :password_confirmation, required: true, label:"密码确认" %>
+
+          <%= f.button :submit, "注册" %>
+        </div><!-- /form -->
+     <% end %>
+
+    </div><!-- /card-container -->
+</div><!-- /container -->
