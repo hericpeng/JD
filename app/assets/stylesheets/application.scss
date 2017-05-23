@@ -118,7 +118,7 @@ body {
 }
 
 //——————————Sign in/Login————————
-body, html {
+.body01 {
     height: 100%;
     background-repeat: no-repeat;
 background: rgb(185,210,224); /* Old browsers */
@@ -183,7 +183,7 @@ hr{
 /*
  * Card component
  */
-.card {
+.card01 {
     background-color: #FFFFFF;
     /* just in case there no content*/
     padding: 1px 25px 30px;
