@@ -116,6 +116,10 @@ body {
     font-size: 18px;
     font-weight: 400;
 }
+//——————————flash————————
+.alert {
+    margin-bottom: 0px;
+}
 //——————————Sign in/Login————————
 .body01 {
     height: 100%;
@@ -182,7 +186,7 @@ hr{
 /*
  * Card component
  */
-.card01 {
+.ps {
     background-color: #FFFFFF;
     /* just in case there no content*/
     padding: 1px 25px 30px;

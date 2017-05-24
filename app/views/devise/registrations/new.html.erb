@@ -6,7 +6,7 @@
 
 <div class="container">
 <h1 class="welcome text-center">Welcome to <br> Ice Code</h1>
-    <div class="card card-container">
+    <div class="card ps card-container">
     <h2 class='login_title text-center'>Sign up</h2>
     <hr>
 
@@ -17,7 +17,7 @@
           <%= f.input :password, required: true, label:"密码", hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
           <%= f.input :password_confirmation, required: true, label:"密码确认" %>
 
-          <%= f.button :submit, "注册" %>
+          <button class="btn btn-lg btn-primary" type="submit">注册</button>
         </div><!-- /form -->
      <% end %>
 
