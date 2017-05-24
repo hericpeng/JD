@@ -6,7 +6,7 @@
 
 <div class="container">
 <h1 class="welcome text-center">Welcome to <br> Ice Code</h1>
-    <div class="card card-container">
+    <div class="card ps card-container">
     <h2 class='login_title text-center'>Log in</h2>
     <hr>
 
@@ -16,7 +16,7 @@
           <%= f.input :password, required: false, label:"密码" %>
           <%= f.input :remember_me, label:"记住我", as: :boolean if devise_mapping.rememberable? %>
 
-          <%= f.button :submit, "登录" %>
+          <button class="btn btn-lg btn-primary" type="submit">登录</button>
         </div><!-- /form -->
      <% end %>
 
