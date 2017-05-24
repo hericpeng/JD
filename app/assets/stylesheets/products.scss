@@ -1,3 +1,95 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+/*===== Product  =====*/
+
+//
+.product-box {
+  text-align: center;
+  padding: 100px 0 100px 100px;
+  margin: auto;
+
+  .background-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  a {
+    color: #666 !important;
+  }
+
+  .btn {
+    background-color: #fff;
+    margin: 0 10px 0 10px;
+  }
+
+  .btn:hover,
+  .btn:focus {
+    color: #eb5424;
+  }
+
+
+
+    li:hover {
+      a {
+        background-color: #f0f0f0 !important;
+      }
+    }
+  }
+
+  a:hover {
+    color: #eb5424 !important;
+
+    img {
+      opacity: 0.75;
+    }
+  }
+
+
+  /*===== 產品列表內容設置 =====*/
+  .product-content {
+    width: 100%;
+    // width: 160px;
+    // height: 260px;
+    overflow: hidden;
+    // margin-left: -100px ;
+    background: #fff;
+    position: relative;
+    margin-bottom: 80px;
+  }
+
+  .product-content img {
+      width: 80%;
+      height: 150%;
+     margin-bottom: 50px;
+     border-size:2px;
+         transition: all 0.4s; /*这句代码的意思是，当这个元素的某个属性发现变化时，不是立刻完成，而是慢慢地在400ms内完成，这样就实现了动画的效果*/
+    -webkit-transition: all 0.4s;
+    -webkit-transition:all 0.4s ease-in-out; /*让「谷歌浏览器」支持这个属性*/
+    -moz-transition:all 0.4s ease-in-out; /*让「火狐浏览器」支持这个属性*/
+    -o-transition:all 0.4s ease-in-out; /*让「safari」支持属性*/
+    -ms-transition:all 0.4s ease-in-out; /*让「IE浏览器」支持这个属性*/
+  }
+
+  .product-content:hover img {
+    transform: scale(1.1); /*在400ms内，图片的尺寸从 1倍 放大到 1.2倍*/
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+  }
+    h2 {
+      margin-top: 150px;
+
+    }
+
+
+  .product-info {
+    text-align: left;
+    line-height: 20px;
+    min-height: 55px;
+  }
