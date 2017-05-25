@@ -77,10 +77,10 @@
 
   .product-content:hover img {
     transform: scale(1.1); /*在400ms内，图片的尺寸从 1倍 放大到 1.2倍*/
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
   }
     h2 {
       margin-top: 150px;
