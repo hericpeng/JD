@@ -5,9 +5,9 @@
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 <div class="container">
-<h1 class="welcome text-center">Welcome to <br> Ice Code</h1>
+<h1 class="welcome text-center"> 知识猎人公会  </h1> <br/>
     <div class="card ps card-container">
-    <h2 class='login_title text-center'>Log in</h2>
+    <h2 class='login_title text-center'>登录</h2>
     <hr>
 
     <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -15,6 +15,9 @@
           <%= f.input :email, required: false, autofocus: true, label:"邮箱" %>
           <%= f.input :password, required: false, label:"密码" %>
           <%= f.input :remember_me, label:"记住我", as: :boolean if devise_mapping.rememberable? %>
+          <label>
+
+          </label>
 
           <button class="btn btn-lg btn-primary" type="submit">登录</button>
         </div><!-- /form -->
