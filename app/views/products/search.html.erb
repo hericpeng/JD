@@ -1,0 +1,42 @@
+<div class="content text-center">
+  <h3>寻宝</h3>
+  <% if @products.blank? %>
+    <div class="text-center">
+      没有找到哦<br/><br/>
+      <%= link_to("已发现的宝藏", products_path, class: "btn btn-lg btn-primary") %>
+
+    </div>
+  <% else %>
+    <div class="product-box">
+      <div class="container">
+          <% if @products.length > 0 %>
+              <!--=== 商品列表 ===-->
+              <div class='row'>
+                  <% @products.each_with_index do |product, index| %>
+                      <div class=' col-xs-12 col-sm-2 col-md-4 product-content'>
+                          <%= link_to product_path(product) do %>
+                              <!-- 商品圖片 -->
+                              <% if  product.image.present? %>
+                                  <!-- 顯示第一張圖片 -->
+                                  <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
+                              <% else %>
+                                  <%= image_tag('http://placehold.it/200x200&text=No Pic', class: 'thumbnail') %>
+                              <% end %>
+                          <% end %>
+                          <div class="product-info">
+                              <ul><%= link_to(product.title , product_path(product)) %></ul>
+                              <ul>￥<%= product.price %></ul>
+
+                          </div>
+                      </div>
+                  <% end %>
+              </div>
+          <% else %>
+              <div class="product-content">
+                  <h2><%= (t('no-product-data')) %></h2>
+              </div>
+          <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
