@@ -42,6 +42,9 @@ gem 'intercom-rails'
 gem 'will_paginate-bootstrap'
 # 搜索
 gem 'ransack'
+# 七牛云
+gem 'carrierwave-qiniu'
+gem 'qiniu-rs'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
