@@ -14,13 +14,13 @@
 </div> -->
 
 
-<div class="product-box">
+<div class="product-box ">
   <div class="container">
 <% if @products.length > 0 %>
     <!--=== 商品列表 ===-->
-    <div class='row'>
+    <div class="row ">
         <% @products.each_with_index do |product, index| %>
-            <div class=' col-xs-12 col-sm-2 col-md-4 product-content'>
+            <div class=" col-xs-12 col-sm-2 col-md-4 product-content wow fadeInUp" data-wow-delay="0.4s">
                 <%= link_to product_path(product) do %>
                     <!-- 商品圖片 -->
                     <% if  product.image.present? %>
