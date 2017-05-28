@@ -44,9 +44,9 @@
   a:hover {
     color: #eb5424 !important;
 
-    img {
-      opacity: 0.75;
-    }
+    // img {
+    //   opacity: 0.75;
+    // }  这一条是鼠标移动到图片上，会添加上一层白色的蒙版
   }
 
 

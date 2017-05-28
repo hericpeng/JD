@@ -1,0 +1,118 @@
+.product-show {
+  margin: 0 0 100px 0;
+
+  /*===== 產品圖片區塊設置=====*/
+  .product-image {
+    .image-box {
+      padding: 7.5px;
+    }
+
+    .main-image {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .list-image {
+      width: 100%;
+    }
+
+    .list-image-active {
+      box-shadow: 1.5px 1.5px 1.5px #666;
+    }
+  }
+
+  /*===== 產品介紹區塊設置 =====*/
+  .product-detail {
+    // padding: 0 25px 0 25px;
+    text-align: left;
+
+    h1 {
+      margin-top: 5px;
+      font-size: 24px;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    hr {
+      border: 0;
+      border-bottom: 1.5px dashed #aaa;
+      margin: 30px 0 10px 0;
+    }
+
+    img {
+      width: 17.5px;
+    }
+
+    div {
+      display: block;
+    }
+
+    .price {
+      height: 60px;
+    }
+
+    .currency {
+      margin: 10px 0 0 0;
+
+      button {
+        margin-right: -10px;
+      }
+
+      ul{
+        margin-top: -5px;
+      }
+    }
+
+    .wish {
+      margin-left: 15px;
+      font-weight: 600;
+    }
+
+    .share {
+      margin-right: 15px;
+    }
+
+    /*===== 按鈕設置 =====*/
+    .btn-default {
+      margin-top: 25px;
+      width: 100%;
+      color: #666;
+    }
+
+    .btn-default:hover {
+      background-color: #fff;
+      border-color: #eb5424;
+      color: #eb5424;
+    }
+
+    .quantity-box {
+      height: 20px;
+      padding:10px 0 10px 0px;
+
+      .quantity-input {
+        width: 50px;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 2.5px;
+        outline: none;
+      }
+
+      .quantity-input:focus {
+        border: 1px solid #000;
+      }
+
+      .quantity-actions {
+        padding: 2.5px 10px 2.5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 2.5px;
+      }
+
+      .quantity-actions:hover {
+        border: 1px solid #eb5424;
+      }
+    }
+  }
+}

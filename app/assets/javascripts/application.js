@@ -16,5 +16,9 @@
 //= require bootstrap/alert
 //= require bootstrap-sprockets
 //= require bootstrap/dropdown
-
+//= require wow.min
 //= require_tree .
+
+$(document).ready(function() {
+    new WOW().init();
+})
