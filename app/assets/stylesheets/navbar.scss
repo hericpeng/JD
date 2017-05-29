@@ -32,7 +32,7 @@
     background-color: #20B2AA;
     //背景颜色
     border-color: #20B2AA; //边框色
-    padding: 15px 120px;
+    padding: 15px 50px;//调整navbar内容的左右距离
     margin-top: 30px;
     margin-bottom: 0; //底部 margin 不撑开距离
     box-shadow: 0 0 10px rgba(0,0,0,.7); //阴影
@@ -63,13 +63,17 @@
         border-radius: 0; //圆角为0
     }
 }
+
+
 //修改 Logo 字体颜色和对齐样式
 .navbar-default .navbar-brand {
     // color: #696969; //字体颜色
     color: #fff; //字体颜色
+    margin-top: -15px;
+
 
     padding: 10px 15px; //上下10px，左右15px
-    line-height: 30px; //文字行高
+    line-height: 50px; //文字行高
 }
 
 .navbar-default .navbar-brand:focus,
