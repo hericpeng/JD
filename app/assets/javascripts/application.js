@@ -21,3 +21,12 @@
 $(document).ready(function() {
     new WOW().init();
 })
+
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 125) {
+        $('#navbar').addClass('show_move')
+    } else {
+        $('#navbar').removeClass('show_move')
+    }
+})

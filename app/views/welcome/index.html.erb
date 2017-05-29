@@ -1,3 +1,38 @@
+<div class="row">
+    <div class="ph-navbar">
+        <div class="ph-navbarContent">
+            <div class="ph-navbar-left fl">
+                <div class="logo fl"><%=link_to("欢迎来到猎人学院!", products_path, class: "col-red")%></div>
+                <!-- <ul class="nav ph-navbar-right">
+                    <% if !current_user %>
+                        <li class="fl  pr3 pl3">
+                            <%= link_to("注册", new_user_registration_path) %> </li>
+                        <li class="fl">
+                            <%= link_to("登录", new_user_session_path) %></li>
+                    <% else %>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                你好!, <%= current_user.email %>
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <% if current_user.admin? %>
+                                    <li>
+                                        <%= link_to("Admin 选单", admin_products_path ) %>
+                                    </li>
+                                    <li>
+                                        <%= link_to("个人订单列表", account_orders_path ) %>
+                                    </li>
+                                <% end %>
+                                <li> <%= link_to(content_tag(:i, '登出', class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete) %> </li>
+                            </ul>
+                        </li>
+                    <% end %>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+</div>
 <head>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
@@ -73,18 +108,18 @@
 <!-- 页面飘动和文字飘入的js -->
 <script>
     $('.carousel').carousel({
-                       interval: 4000 //修改页面的更换速度
-                   })
+                               interval: 4000 //修改页面的更换速度
+                           })
 
-                   $('#bootstrap-touch-slider').bsTouchSlider();
+                           $('#bootstrap-touch-slider').bsTouchSlider();
 </script>
 <script>
     $(document).ready(function () {
-                   $('.material-button-toggle').click(function () {
-                       $(this).toggleClass('open');
-                       $('.option').toggleClass('scale-on');
-                   });
-                  });
+                           $('.material-button-toggle').click(function () {
+                               $(this).toggleClass('open');
+                               $('.option').toggleClass('scale-on');
+                           });
+                          });
 </script>
 <!-- 页面飘动和文字飘入的js结束 -->
 <!-- 流动字体 -->
@@ -134,7 +169,7 @@
                             </div>
                         </div>
                     </div>
-                     <!-- end front panel -->
+                    <!-- end front panel -->
                     <div class="back">
                         <div class="header">
                             <h4 class="profession">课程简介</h4>
@@ -171,13 +206,13 @@
                             </div>
                         </div>
                     </div>
-                     <!-- end back panel -->
+                    <!-- end back panel -->
                 </div>
-                 <!-- end card -->
+                <!-- end card -->
             </div>
-             <!-- end card-container -->
+            <!-- end card-container -->
         </div>
-         <!-- end col sm 3 -->
+        <!-- end col sm 3 -->
         <!-- <div class="col-sm-1"></div> -->
         <div class="col-md-4 col-sm-6 wow fadeInUpBig" data-wow-delay="0.4s">
             <div class="card-container">
@@ -202,7 +237,7 @@
                         </div>
                     </div>
                 </div>
-                 <!-- end front panel -->
+                <!-- end front panel -->
                 <div class="back">
                     <div class="header">
                         <h4 class="profession">课程简介</h4>
@@ -240,13 +275,13 @@
                         </div>
                     </div>
                 </div>
-                 <!-- end back panel -->
+                <!-- end back panel -->
             </div>
-             <!-- end card -->
+            <!-- end card -->
         </div>
-         <!-- end card-container -->
+        <!-- end card-container -->
     </div>
-     <!-- end col sm 3 -->
+    <!-- end col sm 3 -->
     <!-- <div class="col-sm-1"></div> -->
     <div class="col-md-4 col-sm-6 wow fadeInUpBig" data-wow-delay="0.6s">
         <div class="card-container">
@@ -271,7 +306,7 @@
                     </div>
                 </div>
             </div>
-             <!-- end front panel -->
+            <!-- end front panel -->
             <div class="back">
                 <div class="header">
                     <h4 class="profession">课程简介</h4>
@@ -308,126 +343,123 @@
                     </div>
                 </div>
             </div>
-             <!-- end back panel -->
+            <!-- end back panel -->
         </div>
-         <!-- end card -->
+        <!-- end card -->
     </div>
-     <!-- end card-container -->
+    <!-- end card-container -->
 </div>
- <!-- end col-sm-3 -->
+<!-- end col-sm-3 -->
 </div>
- <!-- end col-sm-10 -->
+<!-- end col-sm-10 -->
 </div>
- <!-- end row -->
+<!-- end row -->
 <div class="space-150"></div>
 </div>
-
-
-  <!-- 翻转小卡片 结束 -->
-
-
-
-    <div class="lp">
-        <div class="lp-advantage pt60 pb100 lp-bg-gray ">
-            <h2 class="lp-advantage-title  tc f22 pb50 wow fadeInUp">「我们可以给您提供什么」</h2>
-            <div class="container bc ">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="lp-advantage-item bc pl20 pr20 tc wow fadeInUp" data-wow-delay="0.4s">
-                            <img class="lp-advantage-img" src="https://ww1.sinaimg.cn/large/006tKfTcgy1fg13j5pyvsj30fo0dzju0.jpg">
-                            <p class="lp-advantage-title f18 mt20 wow fadeInUp" data-wow-delay="0.8s">最好的课程</p>
-                            <p class="lp-advantage-desc f14 pl20 pr20 mt30 wow fadeInUp" data-wow-delay="1.2s">我们通过大数据搜索，为您猎取最好的互联网课程，只有您想不到的好课程，没有我们猎不到的好课程。</p>
-                        </div>
+<!-- 翻转小卡片 结束 -->
+<div class="lp">
+    <div class="lp-advantage pt60 pb100 lp-bg-gray ">
+        <h2 class="lp-advantage-title  tc f22 pb50 wow fadeInUp">「我们可以给您提供什么」</h2>
+        <div class="container bc ">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="lp-advantage-item bc pl20 pr20 tc wow fadeInUp" data-wow-delay="0.4s">
+                        <img class="lp-advantage-img" src="https://ww1.sinaimg.cn/large/006tKfTcgy1fg13j5pyvsj30fo0dzju0.jpg">
+                        <p class="lp-advantage-title f18 mt20 wow fadeInUp" data-wow-delay="0.8s">最好的课程</p>
+                        <p class="lp-advantage-desc f14 pl20 pr20 mt30 wow fadeInUp" data-wow-delay="1.2s">我们通过大数据搜索，为您猎取最好的互联网课程，只有您想不到的好课程，没有我们猎不到的好课程。</p>
                     </div>
-                    <div class="col-md-4">
-                        <div class="lp-advantage-item bc pl20 pr20 tc wow fadeInUp" data-wow-delay="0.4s">
-                            <img class="lp-advantage-img" src="https://ww2.sinaimg.cn/large/006tKfTcgy1fg13e5zglaj30fo0fogml.jpg">
-                            <p class="lp-advantage-title f18 mt20 wow fadeInUp" data-wow-delay="0.8s">良好的学习体验</p>
-                            <p class="lp-advantage-desc f14 pl20 pr20 mt30 wow fadeInUp" data-wow-delay="1.2s">猎人学员采用学习游戏化的设计理念，协助你培养学习习惯，引用游戏化的相关理念，不同的课程将使用不同的学习策略和授课形式。</p>
-                        </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="lp-advantage-item bc pl20 pr20 tc wow fadeInUp" data-wow-delay="0.4s">
+                        <img class="lp-advantage-img" src="https://ww2.sinaimg.cn/large/006tKfTcgy1fg13e5zglaj30fo0fogml.jpg">
+                        <p class="lp-advantage-title f18 mt20 wow fadeInUp" data-wow-delay="0.8s">良好的学习体验</p>
+                        <p class="lp-advantage-desc f14 pl20 pr20 mt30 wow fadeInUp" data-wow-delay="1.2s">猎人学员采用学习游戏化的设计理念，协助你培养学习习惯，引用游戏化的相关理念，不同的课程将使用不同的学习策略和授课形式。</p>
                     </div>
-                    <div class="col-md-4">
-                        <div class="lp-advantage-item bc pl20 pr20 tc wow fadeInUp" data-wow-delay="0.4s">
-                            <img class="lp-advantage-img" src="https://ww2.sinaimg.cn/large/006tKfTcgy1fg13fftbn5j3069069wem.jpg">
-                            <p class="lp-advantage-title f18 mt20 wow fadeInUp" data-wow-delay="0.8s">成长社群</p>
-                            <p class="lp-advantage-desc f14 pl20 pr20 mt30 wow fadeInUp" data-wow-delay="1.2s">一个走的更快，但是一群人会走的更远，为成长者搭建一个学习型社群，互相学习，共同进步。</p>
-                        </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="lp-advantage-item bc pl20 pr20 tc wow fadeInUp" data-wow-delay="0.4s">
+                        <img class="lp-advantage-img" src="https://ww2.sinaimg.cn/large/006tKfTcgy1fg13fftbn5j3069069wem.jpg">
+                        <p class="lp-advantage-title f18 mt20 wow fadeInUp" data-wow-delay="0.8s">成长社群</p>
+                        <p class="lp-advantage-desc f14 pl20 pr20 mt30 wow fadeInUp" data-wow-delay="1.2s">一个走的更快，但是一群人会走的更远，为成长者搭建一个学习型社群，互相学习，共同进步。</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="lp-how pt60 pb60">
+    </div>
+    <!-- <div class="lp-how pt60 pb60">
   		<h2 class="title tc f22 pb20">我们是如何快速送达商品的</h2>
   		<p class="f16 tc light">与全国180多个城市大型超市合作，每天有无数的快递员穿梭于您与超市之间。</p>
   	</div> -->
-        <div class="lp-feedback pt60 pb60 ">
-            <h2 class="lp-advantage-title  tc f22 pb20">「猎人学员」的超级学员</h2>
-            <p class="f16 tc light pb30">听听他们是怎么评价的</p>
-            <div class="home-people container">
-                <div class="row">
-                    <div class="item person fl col-md-4">
-                        <div class="avata-wrapper wow flipInX" data-wow-delay="0.8s">
-                            <img class="avata" src="https://ww4.sinaimg.cn/large/006tKfTcgy1fg0z4ym36uj307s07qaad.jpg">
-                        </div>
-                        <div class="intro clearfix wow flipInX" data-wow-delay="0.8s">
-                            <div class="name">
-                                罗振宇
-  	          </div>
-                        </div>
-                        <div class="words wow zoomIn" data-wow-delay="1s">
-                            <span class="bg"></span>
-                            <span class="fa fa-quote-left quote quote-l iconfont"></span>
-                            <span class="fa fa-quote-right quote quote-r iconfont"></span>
-                            <div class="lp-advantage-desc ">作为一个知识的重度依赖者，一直在困惑互联网的知识过载，苦苦不知道该如何寻找好的知识课程，「猎人学院」帮我解决了这一大难题。</div>
-                        </div>
+    <div class="lp-feedback pt60 pb60 ">
+        <h2 class="lp-advantage-title  tc f22 pb20">「猎人学员」的超级学员</h2>
+        <p class="f16 tc light pb30">听听他们是怎么评价的</p>
+        <div class="home-people container">
+            <div class="row">
+                <div class="item person fl col-md-4">
+                    <div class="avata-wrapper wow flipInX" data-wow-delay="0.8s">
+                        <img class="avata" src="https://ww4.sinaimg.cn/large/006tKfTcgy1fg0z4ym36uj307s07qaad.jpg">
                     </div>
-                    <div class="item person fl col-md-4">
-                        <div class="avata-wrapper wow flipInX" data-wow-delay="0.8s">
-                            <img class="avata" src="https://ww4.sinaimg.cn/large/006tKfTcgy1fg0yz02s9hj30g00g0tac.jpg">
-                        </div>
-                        <div class="intro clearfix wow flipInX" data-wow-delay="0.8s">
-                            <div class="name">
-                                王秒
+                    <div class="intro clearfix wow flipInX" data-wow-delay="0.8s">
+                        <div class="name">
+                            罗振宇
   	          </div>
-                        </div>
-                        <div class="words wow zoomIn" data-wow-delay="1s">
-                            <span class="bg"></span>
-                            <span class="fa fa-quote-left quote quote-l iconfont"></span>
-                            <span class="fa fa-quote-right quote quote-r iconfont"></span>
-                            <div class="lp-advantage-desc">在学习的过程中，「猎人学院」不但提供优质的课程，还为很多课程提供了专业的定制化工具，大大提高了学习的效率，赞！</div>
-                        </div>
                     </div>
-                    <div class="item person fl col-md-4">
-                        <div class="avata-wrapper wow flipInX" data-wow-delay="0.8s">
-                            <img class="avata" src="https://ww3.sinaimg.cn/large/006tKfTcgy1fg0yxkme7ej30g00g1abo.jpg">
-                        </div>
-                        <div class="intro clearfix wow flipInX" data-wow-delay="0.8s">
-                            <div class="name">
-                                Nic
+                    <div class="words wow zoomIn" data-wow-delay="1s">
+                        <span class="bg"></span>
+                        <span class="fa fa-quote-left quote quote-l iconfont"></span>
+                        <span class="fa fa-quote-right quote quote-r iconfont"></span>
+                        <div class="lp-advantage-desc ">作为一个知识的重度依赖者，一直在困惑互联网的知识过载，苦苦不知道该如何寻找好的知识课程，「猎人学院」帮我解决了这一大难题。</div>
+                    </div>
+                </div>
+                <div class="item person fl col-md-4">
+                    <div class="avata-wrapper wow flipInX" data-wow-delay="0.8s">
+                        <img class="avata" src="https://ww4.sinaimg.cn/large/006tKfTcgy1fg0yz02s9hj30g00g0tac.jpg">
+                    </div>
+                    <div class="intro clearfix wow flipInX" data-wow-delay="0.8s">
+                        <div class="name">
+                            王秒
   	          </div>
-                        </div>
-                        <div class="words wow zoomIn" data-wow-delay="1s">
-                            <span class="bg"></span>
-                            <span class="fa fa-quote-left quote quote-l iconfont"></span>
-                            <span class="fa fa-quote-right quote quote-r iconfont"></span>
-                            <div class="lp-advantage-desc">代码敲到累的时候，上「猎人学院」逛一逛，寻找一些轻松的自己喜欢的课程，可以放松一下大脑，开开脑洞，编出代码更完美。</div>
-                        </div>
+                    </div>
+                    <div class="words wow zoomIn" data-wow-delay="1s">
+                        <span class="bg"></span>
+                        <span class="fa fa-quote-left quote quote-l iconfont"></span>
+                        <span class="fa fa-quote-right quote quote-r iconfont"></span>
+                        <div class="lp-advantage-desc">在学习的过程中，「猎人学院」不但提供优质的课程，还为很多课程提供了专业的定制化工具，大大提高了学习的效率，赞！</div>
+                    </div>
+                </div>
+                <div class="item person fl col-md-4">
+                    <div class="avata-wrapper wow flipInX" data-wow-delay="0.8s">
+                        <img class="avata" src="https://ww3.sinaimg.cn/large/006tKfTcgy1fg0yxkme7ej30g00g1abo.jpg">
+                    </div>
+                    <div class="intro clearfix wow flipInX" data-wow-delay="0.8s">
+                        <div class="name">
+                            Nic
+  	          </div>
+                    </div>
+                    <div class="words wow zoomIn" data-wow-delay="1s">
+                        <span class="bg"></span>
+                        <span class="fa fa-quote-left quote quote-l iconfont"></span>
+                        <span class="fa fa-quote-right quote quote-r iconfont"></span>
+                        <div class="lp-advantage-desc">代码敲到累的时候，上「猎人学院」逛一逛，寻找一些轻松的自己喜欢的课程，可以放松一下大脑，开开脑洞，编出代码更完美。</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- navbar的js效果 -->
-    <script>
+</div>
+<!-- navbar的js效果 -->
+<!-- <script>
         $(document).ready(function(){
-                     $(".navbar-fixed-top").css("background-color", "transparent"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-                     $(".navbar-fixed-top").css("border-color", "transparent"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    //  $(".navbar-fixed-top navbar-default").css("background-color", "transparent"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    //  $(".navbar-fixed-top navbar-default").css("border-color", "transparent"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
                   $(window).scroll(function() { // check if scroll event happened
                      if ($(document).scrollTop() > 700) { // check if user scrolled more than 50 from top of the browser window
-                       $(".navbar-fixed-top").css("background-color", "#fff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                      //  $(".navbar-fixed-top").css("background-color", "#fff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                       $(".navbar-default").css("width", "auto").css("margin-top","0px").css("left", "0%").css("margin-left", "0px"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                       $(".navbar-default").css("padding", "10px 200px");
                      } else {
-                       $(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent
+                       $(".navbar-fixed-top navbar-default").css("background-color", "transparent"); // if not, change it back to transparent
                      }
                    });
                   });
-    </script>
+    </script> -->

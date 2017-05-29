@@ -4,6 +4,14 @@
 
 @import "base";
 
+
+.navbar-wrap {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #EEEEEE;
+    overflow: hidden;
+    color: #909090;
+}
 //====翻转小卡片（查看详情）颜色======
 
 * {

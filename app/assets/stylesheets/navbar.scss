@@ -1,61 +1,103 @@
- .navbar-default {
-     background-color: #20B2AA;  //背景颜色
+//最上方导航
 
-     border-color: #20B2AA; //边框色
-     padding: 15px 120px;
-     margin-bottom: 0; //底部 margin 不撑开距离
- }
+// 小导航栏
+
+.ph-navbar{
+  width: 100%; /*铺满*/
+  margin-top: -80px;
+}
+.ph-navbarContent {
+  width: 1300px; /*1200px，居中*/
+  margin: 0 100px;
+  height: 30px;
+}
+.ph-navbar-left {
+  float: left; /*你去左边*/
+  width: 50%; /*你占一半的宽度*/
+  height: 30px;
+  padding-top: 5px;
+}
+.ph-navbar-right {
+  float: right; /*你去右边*/
+  width: 50%; /*你也占一半的宽度*/
+  height: 30px;
+  margin-right: -800px;
+}
+
+
+
+
+
+.navbar-default {
+    background-color: #20B2AA;
+    //背景颜色
+    border-color: #20B2AA; //边框色
+    padding: 15px 120px;
+    margin-top: 30px;
+    margin-bottom: 0; //底部 margin 不撑开距离
+    box-shadow: 0 0 10px rgba(0,0,0,.7); //阴影
+    width: 1200px;
+    left: 50%;
+    margin-left: -600px;
+    z-index: 9999;
+
+    &.show_move{
+        background-color: #20B2AA;
+        border-color: 20B2AA; //边框色
+        padding: 5px 120px;
+        margin-top: 0px;
+        margin-bottom: 0; //底部 margin 不撑开距离
+        box-shadow: 0 0 10px rgba(0,0,0,.7); //阴影
+        width: auto;
+        left: 0%;
+        margin-left: 0px;
+        z-index: 9999;
+
+    }
+}
 
 
 //去掉导航栏的圆角
- @media (min-width: 768px) {
-   .navbar {
-     border-radius: 0; //圆角为0
-   }
- }
-
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0; //圆角为0
+    }
+}
 //修改 Logo 字体颜色和对齐样式
+.navbar-default .navbar-brand {
+    // color: #696969; //字体颜色
+    color: #fff; //字体颜色
 
- .navbar-default .navbar-brand {
-   color: #696969; //字体颜色
+    padding: 10px 15px; //上下10px，左右15px
+    line-height: 30px; //文字行高
+}
 
-   padding: 10px 15px; //上下10px，左右15px
-   line-height: 30px; //文字行高
- }
-
- .navbar-default .navbar-brand:hover,
- .navbar-default .navbar-brand:focus {
-   color: #FF6F00; //鼠标放置在链接上的文字颜色
-
-   background-color: transparent; //鼠标放置在链接上的背景颜色，这里设为透明
- }
-
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+    color: #FF6F00; //鼠标放置在链接上的文字颜色
+    background-color: transparent; //鼠标放置在链接上的背景颜色，这里设为透明
+}
 //修改导航栏链接颜色
- .navbar-default .navbar-nav > li > a{
-   color: #696969;//产品注册字体颜色
+.navbar-default .navbar-nav > li > a {
+    color: #fff; //产品注册字体颜色
+}
 
- }
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+    color: #FF6F00;
+    background-color: transparent;
+}
 
- .navbar-default .navbar-nav > li > a:hover,
- .navbar-default .navbar-nav > li > a:focus {
-   color: #FF6F00;
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    color: #FF6F00;
+    background-color: #FFE0B2;
+}
 
-   background-color: transparent;
- }
- .navbar-default .navbar-nav > .active > a,
- .navbar-default .navbar-nav > .active > a:hover,
- .navbar-default .navbar-nav > .active > a:focus {
-   color: #FF6F00;
-
-   background-color: #FFE0B2;
-
- }
-
- .navbar-default .navbar-nav > .open > a,
- .navbar-default .navbar-nav > .open > a:focus,
- .navbar-default .navbar-nav > .open > a:hover {
-   background-color: #FFE0B2;
-
-   color: #212121;
-
- }
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+    background-color: #FFE0B2;
+    color: #212121;
+}
