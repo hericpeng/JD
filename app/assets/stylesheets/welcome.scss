@@ -19,7 +19,6 @@
     text-decoration: none;
 }
 //以下内容全部为首页滑动大图的css。
-
 .bs-slider {
     overflow: hidden;
     max-height: 700px;
@@ -38,7 +37,7 @@
 }
 
 .bs-slider .bs-slider-overlay {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -101,7 +100,7 @@
     overflow: hidden;
     line-height: 43px;
     text-shadow: none;
-    position: relative;
+    position: absolute;
     font-weight: normal;
     background: transparent;
     -webkit-border-radius: 100px;
@@ -369,8 +368,6 @@
         display: none;
     }
 }
-
-//========翻转小卡片结束===============//
 
 
 //
