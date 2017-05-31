@@ -33,10 +33,9 @@ body {
     margin-top: 80px;
     margin-bottom: 150px;
     background: linear-gradient(180deg,#E0FFFF,#E0E0E0);
-
-
 }
 //---------Box---------
+
 .box {
     background-image: url("header.jpg");
     background-repeat: no-repeat;
@@ -70,10 +69,6 @@ body {
         color: white;
     }
 }
-
-
-
-
 //----ABOUT-----
 .sec-about {
     font-family: 'Open sans', sans-serif;
@@ -98,6 +93,7 @@ body {
     }
 }
 //---------Content---------
+
 .content-section-a {
     padding: 50px 0;
     background-color: #f8f8f8;
@@ -124,6 +120,12 @@ body {
     font-weight: 400;
 }
 //——————————flash————————
+
 .alert {
-    margin-bottom: 0px;
+    margin-top: 35px;
+    position: fixed; // 这个属性防止将内容挤下去
+    left: 8%;
+    width: 84%;
+    z-index: 10; // 让消息显示在最上面
+    border-radius: 0;
 }
