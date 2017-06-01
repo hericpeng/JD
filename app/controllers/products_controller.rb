@@ -2,25 +2,32 @@ class ProductsController < ApplicationController
   before_action :validate_search_key, only: [:search]
 
   def index
+    if params[:category].blank?
       @products = Product.all
+    else
+      @category_id = Category.find_by(name: params[:category]).id #先找到category_id
+
+      @products = Product.where(category_id:  @category_id) #再根据category_id找到相对应的产品。
+
+    end
   end
 
   def show
-      @product = Product.find(params[:id])
+    @product = Product.find(params[:id])
   end
 
   def add_to_cart
-      @product = Product.find(params[:id])
+    @product = Product.find(params[:id])
 
-      if !current_cart.products.include?(@product)
-          current_cart.add_product_to_cart(@product)
+    if !current_cart.products.include?(@product)
+        current_cart.add_product_to_cart(@product)
 
-          flash[:notice] = "你已经成功的将#{@product.title}加入愿望清单！"
-      else
-          flash[:warning] = '你的愿望清单内已有此物品！'
-      end
+        flash[:notice] = "你已经成功的将#{@product.title}加入愿望清单！"
+    else
+        flash[:warning] = '你的愿望清单内已有此物品！'
+    end
 
-      redirect_to :back
+    redirect_to :back
   end
 
   def search
