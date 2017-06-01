@@ -1,10 +1,10 @@
 <div class="content text-center">
+  <br/><br/>
   <h3>寻宝</h3>
   <% if @products.blank? %>
     <div class="text-center">
       没有找到哦<br/><br/>
       <%= link_to("已发现的宝藏", products_path, class: "btn btn-lg btn-primary") %>
-
     </div>
   <% else %>
     <div class="product-box">
