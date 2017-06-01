@@ -47,6 +47,8 @@ gem 'ransack'
 gem 'carrierwave-qiniu'
 gem 'qiniu-rs'
 gem 'figaro'
+# 商品页面“+ -”按钮
+gem 'jquery-turbolinks'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

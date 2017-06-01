@@ -48,28 +48,28 @@
                     </div>
                     <p><%= simple_format(@product.description) %></p>
                 </div>
-                <hr />
+                <hr/>
                 <div>
                     <p>
                         <% if @product.quantity > 0 %>
                             <div class="quantity-box">
                                 <div class="left-box"><%= t('数量') %>：
-                      <%= link_to("-", "", id: "quantity-down", class: "quantity-actions") %>
-                                    <input type="text" name="quantity" value="1" id="quantity" max="<%= @product.quantity%>" class="quantity-input">
-                                    <%= link_to("+", "", id: "quantity-up", class: "quantity-actions") %>
+                                 <%= link_to("-", "", id: "quantity-minus", class: "quantity-actions") %>
+                                    <input type="text" name="quantity" value="1" id="quantity-input" class="quantity-input">
+                                 <%= link_to("+", "", id: "quantity-plus", class: "quantity-actions") %>
                                 </div>
-                            <% else %>
-                                <%= t('product-quantity-none') %>
-                            <% end %>
-                        </p>
-                    </div>
+                            </div>
+                        <% else %>
+                            <%= t('product-quantity-none') %>
+                        <% end %>
+                    </p>
                     <hr />
                     <!-- 加入購物車 -->
                     <button class="btn btn-md btn-default" type="submit">
-
                         <%= link_to("加入愿望清单", add_to_cart_product_path(@product), :method => :post) %>
                     </button>
                 </div>
-            <% end %>
-        </div>
+            </div>
+        <% end %>
     </div>
+</div>
