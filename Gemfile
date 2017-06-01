@@ -38,6 +38,7 @@ gem 'letter_opener', group: :development
 gem 'aasm'
 gem 'will_paginate'
 gem 'intercom-rails'
+gem 'awesome_rails_console'
 # 分页
 gem 'will_paginate-bootstrap'
 # 搜索
