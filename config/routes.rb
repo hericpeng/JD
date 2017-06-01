@@ -19,11 +19,13 @@ Rails.application.routes.draw do
     member do
       post :add_to_cart
     end
-    
+
     collection do
       get :search
     end
   end
+
+  # resources :categories
 
   resources :carts do
     collection do
@@ -32,7 +34,12 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :cart_items
+  resources :cart_items do
+    member do
+      post :add_quantity
+      post :remove_quantity
+    end
+  end
 
   resources :orders do
     member do
