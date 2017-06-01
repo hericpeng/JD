@@ -38,6 +38,7 @@ gem 'letter_opener', group: :development
 gem 'aasm'
 gem 'will_paginate'
 gem 'intercom-rails'
+gem 'awesome_rails_console'
 # 分页
 gem 'will_paginate-bootstrap'
 # 搜索
@@ -46,6 +47,8 @@ gem 'ransack'
 gem 'carrierwave-qiniu'
 gem 'qiniu-rs'
 gem 'figaro'
+# 商品页面“+ -”按钮
+gem 'jquery-turbolinks'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

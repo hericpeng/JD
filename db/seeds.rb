@@ -14,3 +14,7 @@ u.password_confirmation = "123456"   # 最少要六码
 
 u.is_admin = true
 u.save
+
+#————分类————
+Category.create(name: "知识宝藏")
+Category.create(name: "效率工具")

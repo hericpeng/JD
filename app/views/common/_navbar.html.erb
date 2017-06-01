@@ -9,11 +9,28 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
             <ul class="nav navbar-nav">
                 <li >
-                    <%= link_to("课程", products_path) %>
+                    <a href="/products/search?utf8=✓&amp;q=知识宝藏">知识宝藏</a>
                 </li>
                 <li >
-                    <%= link_to("工具", products_path) %>
+                    <a href="/products/search?utf8=✓&amp;q=效率工具">效率工具</a>
                 </li>
+
+                <!-- 分类
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">分类浏览
+                    <span class="caret"></span>
+
+                  </a>
+                  <ul class="dropdown-menu">
+                    <% Category.all.each do |category| %>
+                      <li>
+                        <%= link_to(category.name, products_path(category: category.name)) %>
+                      </li>
+                    <% end %>
+                  </ul>
+                </li>
+                 分类 -->
+
                 <li>
                   <%= link_to("知识猎人公会", href="https://floating-earth-63565.herokuapp.com") %>
                 </li>
@@ -30,6 +47,9 @@
               </div>
               <% end %>
             </div>
+
+
+
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <%= link_to carts_path do  %>
