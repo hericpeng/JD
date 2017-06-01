@@ -11,7 +11,8 @@
     background-color: #20B2AA;
     //背景颜色
     border-color: #20B2AA; //边框色
-    padding: 15px 50px;//调整navbar内容的左右距离
+
+    padding: 5px 50px;//调整navbar内容的左右距离
     margin-top: 30px;
     margin-bottom: 0; //底部 margin 不撑开距离
     box-shadow: 0 0 10px rgba(0,0,0,.7); //阴影
@@ -22,7 +23,8 @@
 
     &.show_move{
         background-color: #20B2AA;
-        border-color: 20B2AA; //边框色
+        border-color: #20B2AA; //边框色
+      background: rgba(32,178,170,0.7);
         padding: 5px 120px;
         margin-top: 0px;
         margin-bottom: 0; //底部 margin 不撑开距离
@@ -48,7 +50,7 @@
 .navbar-default .navbar-brand {
     // color: #696969; //字体颜色
     color: #fff; //字体颜色
-    margin-top: -15px;
+    margin-top: -10px;
 
 
     padding: 10px 15px; //上下10px，左右15px
