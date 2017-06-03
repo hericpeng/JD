@@ -1,3 +1,91 @@
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+</head>
+<div id="bootstrap-touch-slider" class="carousel bs-slider slide  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+        <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+        <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper For Slides -->
+    <div class="carousel-inner" role="listbox">
+        <!-- Third Slide -->
+        <div class="item active">
+            <!-- Slide Background -->
+            <img src="https://ww2.sinaimg.cn/large/006tKfTcgy1fg5scs25ykj31kw0rawjl.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+            <div class="bs-slider-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <!-- Slide Text Layer -->
+                    <div class="slide-text slide_style_right">
+                        <h1 data-animation="animated zoomInRight">通往财富自由之路</h1>
+                        <p data-animation="animated fadeInLeft">人人都至少有一次机会。</p>
+                        <a href="https://h5.sao.cn/product/detail?alias=onhnfsdtybxb" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">课程介绍</a>
+                        <a href="https://h5.sao.cn/product/detail?alias=onhnfsdtybxb" target="_blank"  class="btn btn-primary" data-animation="animated fadeInRight">订购课程</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Slide -->
+        <!-- Second Slide -->
+        <div class="item">
+            <!-- Slide Background -->
+            <img src="https://ww1.sinaimg.cn/large/006tNc79gy1fg5y95w95tj31kw0rattq.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+            <div class="bs-slider-overlay"></div>
+            <!-- Slide Text Layer -->
+            <div class="slide-text slide_style_left">
+                <h1 data-animation="animated flipInX">极速读书会</h1>
+                <p data-animation="animated lightSpeedIn">这也许是你参加的最后一个读书会。</p>
+                <a href="https://speedread.club" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">课程介绍</a>
+                <a href="https://speedread.club" target="_blank"  class="btn btn-primary" data-animation="animated fadeInDown">订购课程</a>
+            </div>
+        </div>
+        <!-- End of Slide -->
+        <!-- Third Slide -->
+        <div class="item">
+                <img src="https://ww1.sinaimg.cn/large/006tKfTcgy1fg5rmgr3uxj30go081t9c.jpg" alt="猎人学院"  class="slide-image"/>
+                <div class="bs-slider-overlay"></div>
+                  <div class="slide-text slide_style_lift">
+                    <h1 data-animation="animated zoomInLeft">猎人学院</h1>
+                    <p data-animation="animated fadeInRight">做最好的课程猎手。</p>
+                    <!-- <a href="https://floating-earth-63565.herokuapp.com" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">课程介绍</a> -->
+                    <a href="https://floating-earth-63565.herokuapp.com" target="_blank" class="btn btn-primary" data-animation="animated fadeInRight">开始狩猎</a>
+                </div>
+            </div>
+        <!-- End of Slide -->
+    </div>
+    <!-- End of Wrapper For Slides -->
+    <!-- Left Control -->
+    <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+        <span class="fa fa-angle-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <!-- Right Control -->
+    <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+        <span class="fa fa-angle-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!-- End  bootstrap-touch-slider Slider -->
+<!-- 页面飘动和文字飘入的js -->
+<script>
+    $('.carousel').carousel({
+                       interval: 4000 //修改页面的更换速度
+                   })
+                   $('#bootstrap-touch-slider').bsTouchSlider();
+</script>
+<script>
+    $(document).ready(function () {
+                   $('.material-button-toggle').click(function () {
+                       $(this).toggleClass('open');
+                       $('.option').toggleClass('scale-on');
+                   });
+                  });
+</script>
+<!-- 页面飘动和文字飘入的js结束 -->
+
 <!-- <div class="row">
   <% @products.each do |product| %>
     <div class="col-xs-6 col-md-3">
