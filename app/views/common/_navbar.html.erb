@@ -15,8 +15,15 @@
                 <li >
                     <a href="/products/search?utf8=✓&amp;q=效率工具">工具</a>
                 </li> -->
-                <!-- 商品分类 -->
-                <li class="dropdown">
+                <!--===商品分类===-->
+                <li>
+                  <a href="/products?category=课程" style="<%= if !params[:where].blank? && params[:where]=="课程" then "color:#B28435;" end%>">课程</a>
+                </li>
+                <li>
+                  <a href="/products?category=工具" style="<%= if !params[:where].blank? && params[:where]=="工具" then "color:#B28435;" end%>">工具</a>
+                </li>
+                <!--下拉菜单-->
+                <!-- <li class="dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     <%= t("classification") %>
                     <span class="caret"></span>
@@ -28,7 +35,7 @@
                             </li>
                         <% end %>
                     </ul>
-                </li>
+                </li> -->
                 <li>
                   <%= link_to( t("Hunters"), href="https://floating-earth-63565.herokuapp.com") %>
                 </li>
