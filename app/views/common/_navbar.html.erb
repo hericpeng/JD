@@ -17,7 +17,8 @@
 
                 <!-- 商品分类 -->
                 <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">分类浏览
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <%= t("classification") %>
                     <span class="caret"></span>
 
                   </a>
@@ -32,7 +33,7 @@
 
 
                 <li>
-                  <%= link_to("知识猎人公会", href="https://floating-earth-63565.herokuapp.com") %>
+                  <%= link_to( t("Hunters"), href="https://floating-earth-63565.herokuapp.com") %>
                 </li>
             </ul>
             <div class="navbar-form navbar-left">
@@ -51,30 +52,38 @@
 
 
             <ul class="nav navbar-nav navbar-right">
+                <!-- 语系下拉菜单 -->
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t("language") %><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <!-- 语系切换-->
+                  <li><%= link_to "简体中文", :controller => controller_name, :action => action_name, :locale => "zh-CN" %></li>
+                  <li><%= link_to "繁體中文", :controller => controller_name, :action => action_name, :locale => "zh-TW" %></li>
+                </ul>
                 <li>
                     <%= link_to carts_path do  %>
-                        愿望清单 <img src='<%= image_url 'cart.png' %>'height="18" width="18">( <%= current_cart.products.count %> )
+                        <%= t('wish-list') %> <img src='<%= image_url 'cart.png' %>'height="18" width="18">( <%= current_cart.products.count %> )
                     <% end %>
                 </li>
                 <% if !current_user %>
-                    <li><%= link_to("注册", new_user_registration_path) %> </li>
-                    <li><%= link_to('登入', new_user_session_path) %></li>
+                    <li><%= link_to(t('signup'), new_user_registration_path) %> </li>
+                    <li><%= link_to(t('login'), new_user_session_path) %></li>
                 <% else %>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            你好!, <%= current_user.email %>
+                            <%= t('hello') %>！, <%= current_user.email %>
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
                             <% if current_user.admin? %>
                                 <li>
-                                    <%= link_to("Admin 选单", admin_products_path ) %>
-                                </li>
-                                <li>
-                                    <%= link_to("个人订单列表", account_orders_path ) %>
+                                    <%= link_to(t('admin-access'), admin_products_path ) %>
                                 </li>
                             <% end %>
-                            <li> <%= link_to(content_tag(:i, '登出', class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete) %> </li>
+                            <li>
+                                <%= link_to(t('user-order'), account_orders_path ) %>
+                            </li>
+
+                            <li> <%= link_to(content_tag(:i, t('logout'), class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete) %> </li>
                         </ul>
                     </li>
                 <% end %>

@@ -1,5 +1,5 @@
 
-<div style="margin:-45px 0 80px 80px;"><%=link_to("欢迎来到猎人学院!", products_path, class: "col-red")%></div>
+<div style="margin:-45px 0 80px 80px;"><%=link_to(t("hunter-college"), products_path, class: "col-red")%></div>
 <head>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
@@ -22,10 +22,10 @@
                 <div class="row">
                     <!-- Slide Text Layer -->
                     <div class="slide-text slide_style_right">
-                        <h1 data-animation="animated zoomInRight">通往财富自由之路</h1>
-                        <p data-animation="animated fadeInLeft">人人都至少有一次机会。</p>
-                        <a href="https://h5.sao.cn/product/detail?alias=onhnfsdtybxb" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">课程介绍</a>
-                        <a href="https://h5.sao.cn/product/detail?alias=onhnfsdtybxb" target="_blank"  class="btn btn-primary" data-animation="animated fadeInRight">订购课程</a>
+                        <h1 data-animation="animated zoomInRight"><%= t("wealth") %></h1>
+                        <p data-animation="animated fadeInLeft"><%= t("opportunity") %></p>
+                        <a href="https://h5.sao.cn/product/detail?alias=onhnfsdtybxb" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft"><%= t("introduction") %></a>
+                        <a href="https://h5.sao.cn/product/detail?alias=onhnfsdtybxb" target="_blank"  class="btn btn-primary" data-animation="animated fadeInRight"><%= t("subscribe") %></a>
                     </div>
                 </div>
             </div>
@@ -38,10 +38,10 @@
             <div class="bs-slider-overlay"></div>
             <!-- Slide Text Layer -->
             <div class="slide-text slide_style_left">
-                <h1 data-animation="animated flipInX">极速读书会</h1>
-                <p data-animation="animated lightSpeedIn">这也许是你参加的最后一个读书会。</p>
-                <a href="https://speedread.club" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">课程介绍</a>
-                <a href="https://speedread.club" target="_blank"  class="btn btn-primary" data-animation="animated fadeInDown">订购课程</a>
+                <h1 data-animation="animated flipInX"><%= t ("read-meetup") %></h1>
+                <p data-animation="animated lightSpeedIn"><%= t ("meetup") %></p>
+                <a href="https://speedread.club" target="_blank" class="btn btn-default" data-animation="animated fadeInUp"><%= t("introduction") %></a>
+                <a href="https://speedread.club" target="_blank"  class="btn btn-primary" data-animation="animated fadeInDown"><%= t("subscribe") %></a>
             </div>
         </div>
         <!-- End of Slide -->
@@ -50,10 +50,10 @@
                 <img src="https://ww1.sinaimg.cn/large/006tKfTcgy1fg5rmgr3uxj30go081t9c.jpg" alt="猎人学院"  class="slide-image"/>
                 <div class="bs-slider-overlay"></div>
                   <div class="slide-text slide_style_lift">
-                    <h1 data-animation="animated zoomInLeft">猎人学院</h1>
-                    <p data-animation="animated fadeInRight">做最好的课程猎手。</p>
+                    <h1 data-animation="animated zoomInLeft"><%= t ("Hunter-College") %></h1>
+                    <p data-animation="animated fadeInRight"><%= t ("best-course") %></p>
                     <!-- <a href="https://floating-earth-63565.herokuapp.com" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">课程介绍</a> -->
-                    <a href="https://floating-earth-63565.herokuapp.com" target="_blank" class="btn btn-primary" data-animation="animated fadeInRight">开始狩猎</a>
+                    <a href="https://floating-earth-63565.herokuapp.com" target="_blank" class="btn btn-primary" data-animation="animated fadeInRight"><%= t("hunting") %></a>
                 </div>
             </div>
         <!-- End of Slide -->
@@ -109,7 +109,7 @@
 
 <!-- 翻转小卡片  开始 -->
 <div class="container">
-    <h1 style="text-align:center;margin:100px 0px; font-size:3em;">大 咖 课 程</h1>
+    <h1 style="text-align:center;margin:100px 0px; font-size:3em;"><%= t ("great-course") %></h1>
     <div class="row">
         <div class="col-sm-10 col-sm-offset-1 ">
             <div class="col-md-4 col-sm-6 wow fadeInUpBig" data-wow-delay="0.2s">
@@ -124,13 +124,13 @@
                             </div>
                             <div class="content">
                                 <div class="main">
-                                    <h4 class="text-center">「 通往财富自由之路 」</h4>
+                                    <h4 class="text-center">「 <%= t("wealth") %> 」</h4>
                                     <h5 class="profession">李笑来</h5>
-                                    <p class="text-center"></br>"人人都至少有一次机会！"</p>
+                                    <p class="text-center"></br><%= t("opportunity") %></p>
                             </div>
                             <div class="footersmall">
                                 <div class="rating">
-                                    <i class="fa fa-mail-forward"></i> 查看详情
+                                    <i class="fa fa-mail-forward"></i> <%= t("see") %>
     						                </div>
                             </div>
                         </div>
@@ -138,29 +138,29 @@
                     <!-- end front panel -->
                     <div class="back">
                         <div class="header">
-                            <h4 class="profession">课程简介</h4>
+                            <h4 class="profession"><%= t("introduction") %></h4>
                         </div>
                         <div class="content">
                             <div class="main">
                                 <!-- <h4 class="text-center">Job Description</h4> -->
-                                <p class="text-center">在这个课程里，亿万富翁李笑来带着大家每周更新一个观念，一年 52 次深入探讨，请大家上车，一起赶路，通往财富自由。</p>
+                                <p class="text-center"><%= t("wealth-introduction") %></p>
                                 <div class="stats-container">
                                     <div class="stats">
                                         <h4>235000</h4>
                                         <p>
-                                            浏览
+                                            <%= t("browse") %>
   						                           </p>
                                     </div>
                                     <div class="stats">
                                         <h4>155581</h4>
                                         <p>
-                                            订阅
+                                            <%= t("subscribe") %>
   								                    	</p>
                                     </div>
                                     <div class="stats">
                                         <h4>340</h4>
                                         <p>
-                                            课程
+                                            <%= t ("course") %>
   										                   	</p>
                                     </div>
                                 </div>
@@ -168,7 +168,7 @@
                         </div>
                         <div class="footersmall">
                             <div class="social-links text-center">
-                                <a href="https://h5.sao.cn/product/detail?alias=onhnfsdtybxb">订购课程</a>
+                                <a href="https://h5.sao.cn/product/detail?alias=onhnfsdtybxb"><%= t("subscribe") %></a>
                             </div>
                         </div>
                     </div>
@@ -192,13 +192,13 @@
                         </div>
                         <div class="content">
                             <div class="main">
-                                  <h4 class="text-center">「 极速读书法 」</h4>
+                                  <h4 class="text-center">「 <%= t ("read-meetup") %> 」</h4>
                                 <h5 class="profession">Xdite</h5>
-                                <p class="text-center"></br>"你这辈子参加的最后一个读书会。"</p>
+                                <p class="text-center"></br><%= t("meetup") %></p>
                         </div>
                         <div class="footersmall">
                             <div class="rating">
-                                <i class="fa fa-mail-forward"></i> 查看详情
+                                <i class="fa fa-mail-forward"></i> <%= t("see") %>
             </div>
                         </div>
                     </div>
@@ -206,30 +206,29 @@
                 <!-- end front panel -->
                 <div class="back">
                     <div class="header">
-                        <h4 class="profession">课程简介</h4>
+                        <h4 class="profession"><%= t("introduction") %></h4>
                     </div>
                     <div class="content">
                         <div class="main">
                             <!-- <h4 class="text-center">Job Description</h4> -->
-                            <p class="text-center">首个真正具备「读书会」效果的「读书会」，独家上瘾式读书法让人停不下来。
-              和数万人共同享受大脑升级的极致快感。告别低效无用读书，立即产生行动改变。在这里，人人都有极速阅读能力。</p>
+                            <p class="text-center"><%= t("read-meetup-introduction") %></p>
                             <div class="stats-container">
                                 <div class="stats">
                                     <h4>12000</h4>
                                     <p>
-                                        浏览
+                                        <%= t("browse") %>
   										             	</p>
                                 </div>
                                 <div class="stats">
                                     <h4>5060</h4>
                                     <p>
-                                        订阅
+                                        <%= t("subscribe") %>
   										             	</p>
                                 </div>
                                 <div class="stats">
                                     <h4>93</h4>
                                     <p>
-                                        课程
+                                        <%= t ("course") %>
   										             	</p>
                                 </div>
                             </div>
@@ -237,7 +236,7 @@
                     </div>
                     <div class="footersmall">
                         <div class="social-links text-center">
-                            <a href="https://speedread.club">订购课程</a>
+                            <a href="https://speedread.club"><%= t("subscribe") %></a>
                         </div>
                     </div>
                 </div>
@@ -261,13 +260,13 @@
                     </div>
                     <div class="content">
                         <div class="main">
-                                <h4 class="text-center">「 心流学习法 」</h4>
+                                <h4 class="text-center">「 <%= t("Heart-flow") %> 」</h4>
                             <p class="profession">赵龙</p>
-                            <p class="text-center"></br>"快速入门任何职业技能"</p>
+                            <p class="text-center"></br><%= t("fast-learning") %></p>
                     </div>
                     <div class="footersmall">
                         <div class="rating">
-                            <i class="fa fa-mail-forward"></i> 查看详情
+                            <i class="fa fa-mail-forward"></i> <%= t("see") %>
   						</div>
                     </div>
                 </div>
@@ -275,29 +274,29 @@
             <!-- end front panel -->
             <div class="back">
                 <div class="header">
-                    <h4 class="profession">课程简介</h4>
+                    <h4 class="profession"><%= t("introduction") %></h4>
                 </div>
                 <div class="content">
                     <div class="main">
                         <!-- <h4 class="text-center">Job Description</h4> -->
-                        <p class="text-center">关于学习方法的知识，通过心流学习法可以让你在短时间内进入学习状态，高效利用时间，大量压缩准备时间，达到快速学习的目的。</p>
+                        <p class="text-center"><%= t("Heart-flow-introduction") %></p>
                         <div class="stats-container">
                             <div class="stats">
                                 <h4>530</h4>
                                 <p>
-                                    浏览
+                                    <%= t("browse") %>
   										             	</p>
                             </div>
                             <div class="stats">
                                 <h4>120</h4>
                                 <p>
-                                    订阅
+                                    <%= t("subscribe") %>
   									             		</p>
                             </div>
                             <div class="stats">
                                 <h4>11</h4>
                                 <p>
-                                    课程
+                                    <%= t ("course") %>
   									             		</p>
                             </div>
                         </div>
@@ -305,7 +304,7 @@
                 </div>
                 <div class="footersmall">
                     <div class="social-links text-center">
-                        <a href="https://floating-earth-63565.herokuapp.com">订购课程</a>
+                        <a href="https://floating-earth-63565.herokuapp.com"><%= t("subscribe") %></a>
                     </div>
                 </div>
             </div>
@@ -325,28 +324,28 @@
 <!-- 翻转小卡片 结束 -->
 <div class="lp">
     <div class="lp-advantage pt60 pb100 lp-bg-gray ">
-        <h2 class="lp-advantage-title  tc f22 pb50 wow fadeInUp">「我们可以给您提供什么」</h2>
+        <h2 class="lp-advantage-title  tc f22 pb50 wow fadeInUp"><%= t ("t-contents-00") %></h2>
         <div class="container bc ">
             <div class="row">
                 <div class="col-md-4">
                     <div class="lp-advantage-item bc pl20 pr20 tc wow fadeInUp" data-wow-delay="0.4s">
                         <img class="lp-advantage-img" src="https://ww1.sinaimg.cn/large/006tKfTcgy1fg13j5pyvsj30fo0dzju0.jpg">
-                        <p class="lp-advantage-title f18 mt20 wow fadeInUp" data-wow-delay="0.8s">最好的课程</p>
-                        <p class="lp-advantage-desc f14 pl20 pr20 mt30 wow fadeInUp" data-wow-delay="1.2s">我们通过大数据搜索，为您猎取最好的互联网课程，只有您想不到的好课程，没有我们猎不到的好课程。</p>
+                        <p class="lp-advantage-title f18 mt20 wow fadeInUp" data-wow-delay="0.8s"><%= t ("t-contents-01") %></p>
+                        <p class="lp-advantage-desc f14 pl20 pr20 mt30 wow fadeInUp" data-wow-delay="1.2s"><%= t ("t-contents-02") %></p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="lp-advantage-item bc pl20 pr20 tc wow fadeInUp" data-wow-delay="0.4s">
                         <img class="lp-advantage-img" src="https://ww2.sinaimg.cn/large/006tKfTcgy1fg13e5zglaj30fo0fogml.jpg">
-                        <p class="lp-advantage-title f18 mt20 wow fadeInUp" data-wow-delay="0.8s">良好的学习体验</p>
-                        <p class="lp-advantage-desc f14 pl20 pr20 mt30 wow fadeInUp" data-wow-delay="1.2s">猎人学员采用学习游戏化的设计理念，协助你培养学习习惯，引用游戏化的相关理念，不同的课程将使用不同的学习策略和授课形式。</p>
+                        <p class="lp-advantage-title f18 mt20 wow fadeInUp" data-wow-delay="0.8s"><%= t ("t-contents-03") %></p>
+                        <p class="lp-advantage-desc f14 pl20 pr20 mt30 wow fadeInUp" data-wow-delay="1.2s"><%= t ("t-contents-04") %></p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="lp-advantage-item bc pl20 pr20 tc wow fadeInUp" data-wow-delay="0.4s">
                         <img class="lp-advantage-img" src="https://ww2.sinaimg.cn/large/006tKfTcgy1fg13fftbn5j3069069wem.jpg">
-                        <p class="lp-advantage-title f18 mt20 wow fadeInUp" data-wow-delay="0.8s">成长社群</p>
-                        <p class="lp-advantage-desc f14 pl20 pr20 mt30 wow fadeInUp" data-wow-delay="1.2s">一个走的更快，但是一群人会走的更远，为成长者搭建一个学习型社群，互相学习，共同进步。</p>
+                        <p class="lp-advantage-title f18 mt20 wow fadeInUp" data-wow-delay="0.8s"><%= t ("t-contents-05") %></p>
+                        <p class="lp-advantage-desc f14 pl20 pr20 mt30 wow fadeInUp" data-wow-delay="1.2s"><%= t ("t-contents-06") %></p>
                     </div>
                 </div>
             </div>
@@ -357,8 +356,8 @@
   		<p class="f16 tc light">与全国180多个城市大型超市合作，每天有无数的快递员穿梭于您与超市之间。</p>
   	</div> -->
     <div class="lp-feedback pt60 pb60 ">
-        <h2 class="lp-advantage-title  tc f22 pb20">「猎人学员」的超级学员</h2>
-        <p class="f16 tc light pb30">听听他们是怎么评价的</p>
+        <h2 class="lp-advantage-title  tc f22 pb20"><%= t ("t-feedback-00") %></h2>
+        <p class="f16 tc light pb30"><%= t ("t-feedback-01") %></p>
         <div class="home-people container">
             <div class="row">
                 <div class="item person fl col-md-4">
@@ -367,14 +366,14 @@
                     </div>
                     <div class="intro clearfix wow flipInX" data-wow-delay="0.8s">
                         <div class="name">
-                            罗振宇
+                            <%= t ("t-feedback-02") %>
   	          </div>
                     </div>
                     <div class="words wow zoomIn" data-wow-delay="1s">
                         <span class="bg"></span>
                         <span class="fa fa-quote-left quote quote-l iconfont"></span>
                         <span class="fa fa-quote-right quote quote-r iconfont"></span>
-                        <div class="lp-advantage-desc ">作为一个知识的重度依赖者，一直在困惑互联网的知识过载，苦苦不知道该如何寻找好的知识课程，「猎人学院」帮我解决了这一大难题。</div>
+                        <div class="lp-advantage-desc "><%= t ("t-feedback-03") %></div>
                     </div>
                 </div>
                 <div class="item person fl col-md-4">
@@ -383,14 +382,14 @@
                     </div>
                     <div class="intro clearfix wow flipInX" data-wow-delay="0.8s">
                         <div class="name">
-                            王秒
+                            <%= t ("t-feedback-04") %>
   	          </div>
                     </div>
                     <div class="words wow zoomIn" data-wow-delay="1s">
                         <span class="bg"></span>
                         <span class="fa fa-quote-left quote quote-l iconfont"></span>
                         <span class="fa fa-quote-right quote quote-r iconfont"></span>
-                        <div class="lp-advantage-desc">在学习的过程中，「猎人学院」不但提供优质的课程，还为很多课程提供了专业的定制化工具，大大提高了学习的效率，赞！</div>
+                        <div class="lp-advantage-desc"><%= t ("t-feedback-05") %></div>
                     </div>
                 </div>
                 <div class="item person fl col-md-4">
@@ -399,14 +398,14 @@
                     </div>
                     <div class="intro clearfix wow flipInX" data-wow-delay="0.8s">
                         <div class="name">
-                            Nic
+                            <%= t ("t-feedback-06") %>
   	          </div>
                     </div>
                     <div class="words wow zoomIn" data-wow-delay="1s">
                         <span class="bg"></span>
                         <span class="fa fa-quote-left quote quote-l iconfont"></span>
                         <span class="fa fa-quote-right quote quote-r iconfont"></span>
-                        <div class="lp-advantage-desc">代码敲到累的时候，上「猎人学院」逛一逛，寻找一些轻松的自己喜欢的课程，可以放松一下大脑，开开脑洞，编出代码更完美。</div>
+                        <div class="lp-advantage-desc"><%= t ("t-feedback-07") %></div>
                     </div>
                 </div>
             </div>
