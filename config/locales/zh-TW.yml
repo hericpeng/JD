@@ -1,0 +1,114 @@
+zh-TW:
+  #--=== navbar ===--#
+  category-name: "%{name}"
+  language: "語系切換"
+  classification: "分類瀏覽"
+  Hunters: "知識獵人公會"
+  wish-list: "願望清單"
+  login: "登錄"
+  signup: "注冊"
+  admin-access: "Admin 選單"
+  user-order: "我的訂單"
+  logout: "登出"
+  hello: "妳好"
+  01: "尋寶"
+
+
+  #--=== 首页 ===--#
+  hunter-college: "歡迎來到獵人學院!"
+  wealth: "通往財富自由之路"
+  opportunity: "人人都至少有壹次機會"
+  read-meetup: "極速讀書會"
+  meetup: "這也許是妳參加的最後壹個讀書會"
+  Hunter-College: "獵人學院"
+  best-course: "為妳狩獵最好的課程"
+  hunting: "開始狩獵"
+
+  introduction: "間介"
+  subscribe: "訂閱"
+
+  great-course: "大 咖 課 程"
+  course: "課程"
+  browse: "瀏覽"
+  Heart-flow: "心流學習法"
+  fast-learning: "快速掌握任何技能"
+  see: "查看詳情"
+  wealth-introduction: "在這個課程裏，億萬富翁李笑來帶著大家每周更新一個觀念，一年 52 次深入探討，請大家上車，一起趕路，通往財富自由。"
+  read-meetup-introduction: "首個真正具備「讀書會」效果的「讀書會」，獨家上瘾式讀書法讓人停不下來。
+              和數萬人共同享受大腦升級的極致快感。告別低效無用讀書，立即産生行動改變。在這裏，人人都有極速閱讀能力。"
+  Heart-flow-introduction: "關于學習方法的知識，通過心流讓短時間內激發你的大腦潛能，讓你快速進入學習狀態推進學習進度，縮短學習時間，達到快速學習的目的。"
+
+  t-contents-00: "「我們可以給您提供什麽」"
+  t-contents-01: "最好的課程"
+  t-contents-02: "我們通過大數據搜索，爲您獵取最好的互聯網課程，只有您想不到的好課程，沒有我們獵不到的好課程。"
+  t-contents-03: "良好的學習體驗"
+  t-contents-04: "獵人學院采用學習遊戲化的設計理念，協助你培養學習習慣，引用遊戲化的相關理念，不同的課程將使用不同的學習策略和授課形式。"
+  t-contents-05: "成長社群"
+  t-contents-06: "一個走的更快，但是一群人會走的更遠，爲成長者搭建一個學習型社群，互相學習，共同進步。"
+
+  t-feedback-00: "「獵人學員」的超級學員"
+  t-feedback-01: "聽聽他們是怎麽評價的"
+  t-feedback-02: "羅振宇"
+  t-feedback-03: "作爲一個知識的重度依賴者，一直在困惑互聯網的知識過載，苦苦不知道該如何尋找好的知識課程，「獵人學院」幫我解決了這一大難題。"
+  t-feedback-04: "王秒"
+  t-feedback-05: "在學習的過程中，「獵人學院」不但提供優質的課程，還爲很多課程提供了專業的定制化工具，大大提高了學習的效率，贊！"
+  t-feedback-06: "Nic"
+  t-feedback-07: "代碼敲到累的時候，上「獵人學院」逛一逛，尋找一些輕松的自己喜歡的課程，可以放松一下大腦，開開腦洞，編出代碼更完美。"
+
+
+
+  #--=== 提示訊息 ===--#
+  message-add-to-cart-success: 成功加入購物車！
+  message-already-added: 您的購物車已有此商品。
+  message-confirm-clear-cart: 您確定要清空整個購物車嗎？
+  message-clear-cart-success: 已清空購物車。
+  message-payment-success: 已完成付款。
+  message-cancel-request-sent: 已提交申請，J&A SELECT 會儘速與您聯繫。
+  message-payment-failed: 付款失敗。
+
+
+  #--=== 愿望清单（购物车） ===--#
+  # 购物车 #
+  cart-index: 購物車
+  cart-clear: 清空購物車
+  cart-list: 購物清單
+
+  f-cart-product-info: 商品資訊
+  f-cart-product-price: 單價
+  f-cart-product-quantity: 數量
+  f-cart-product-option: 操作選項
+  f-cart-total: 總計
+
+  btn-checkout: 前往結帳
+  cart-no-data: 您尚未加入任何商品。
+
+  # 生成訂單 #
+  checkout-index: 訂單資訊
+
+  f-order maker: 订购人
+  f-billing-info: 付款資訊
+  f-billing-name: 付款人 - 姓名
+  f-billing-address: 付款人 - 帳單地址
+  f-shipping-info: 寄送資訊
+  f-shipping-name: 收件人 - 姓名
+  f-shipping-phone: 收件人 - 電話（選填）
+  f-shipping-address: 收件人 - 收貨地址
+  f-input-address: 請輸入地址
+  f-payment-method: 付款方式
+
+  billing-name: 真實姓名
+  billing-address: 帳單地址
+  shipping-name: 真實姓名
+  shipping-phone: 聯絡電話
+  shipping-address: 收件地址
+
+  btn-order-create: 確認下單
+
+  # 訂單 #
+  order-show: 訂單明細
+
+  btn-pay: 線上結帳
+  btn-apply-to-cancel: 申請取消訂單
+
+  order-payment-method: 線上支付
+  order-paid: < 此筆訂單已完成結帳，感謝您的購買。 >
