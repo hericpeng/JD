@@ -9,7 +9,6 @@
    display: flex;
    justify-content: center;
    list-style-type: none;
-   margin-left: -50px;
  }
 
  .soc-media-ul li:not(:first-child) a {
@@ -40,12 +39,37 @@
    bottom: 0;
    width: 100%;
    height: 150px;
-   background-color: #0F504D;
+   background-color: #02061b;
+
    text-align: center;
    overflow: hidden;
+   width: 1200px;
+
+   margin-left: 7.8%;
    .container {
-     margin-top: 20px;
      color: #fff;
      width: 100%;
+
    }
  }
+
+ hr.style-seven {
+    height: 30px;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+hr.style-seven:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+
+}

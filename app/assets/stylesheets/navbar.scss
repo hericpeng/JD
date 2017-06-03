@@ -1,97 +1,32 @@
-//最上方导航
-/*字体颜色和背景颜色*/
-.bg-gray {
-  background: #F5F5F5
-}
-.bg-red {
-  background: #D32048
-}
-.col-gray {
-  color: #808080;
-}
-.col-black {
-  color: #333333;
-}
-.col-red {
-  color: #d32048;
-}
-.col-blue {
-  color: #005AA0;
-}
-
-/*边框*/
-.border {
-  border: 1px solid #DDDDDD;
-}
-
-
-// 导航栏
-.navbar-wrap {
-  height: 30px;
-  line-height: 30px;
-  border-bottom: 1px solid #EEEEEE;
-  overflow: hidden;
-  color: #909090;
-}
-.jh_navbar-spacer {
-  width: 1px;
-  height: 12px;
-  margin-top: 9px;
-  padding: 0;
-  background: #ddd;
-  overflow: hidden;
-}
-
-.ph_navabr-fontcolor
-{
-  color: #6D6D6D
-}
-
-
-/*logo*/
-.logo {
-  font-size: 36px;
-}
-
-.logo {
-  width: 360px;
-  height: 60px;
-
-}
-
-// 小导航栏
-
-
-
-
-
 
 .navbar-default {
-    background-color: #20B2AA;
-    //背景颜色
-    border-color: #20B2AA; //边框色
-
+    background-color: #02061A;
+    // //背景颜色
+    border-color: #0F504D; //边框色
+// background: rgba(2,6,26,0.99);
     padding: 5px 50px;//调整navbar内容的左右距离
-    margin-top: 30px;
-    margin-bottom: 0; //底部 margin 不撑开距离
-    box-shadow: 0 0 10px rgba(0,0,0,.7); //阴影
+    margin-top: 40px;
+    margin-bottom: 50; //底部 margin 不撑开距离
+    // box-shadow: 0 0 10px rgba(0,0,0,.7); //阴影
     width: 1200px;
-    left: 50%;
-    margin-left: -600px;
+
+    margin-left: 7.8%;
     z-index: 9999;
 
     &.show_move{
-        background-color: #20B2AA;
-        border-color: #20B2AA; //边框色
-      background: rgba(32,178,170,0.7);
-        padding: 5px 120px;
-        margin-top: 0px;
-        margin-bottom: 0; //底部 margin 不撑开距离
-        box-shadow: 0 0 10px rgba(0,0,0,.7); //阴影
-        width: auto;
-        left: 0%;
-        margin-left: 0px;
-        z-index: 9999;
+      background-color: #02061A;
+      // //背景颜色
+      border-color: #0F504D; //边框色
+  // background: rgba(2,6,26,0.99);
+      padding: 5px 50px;//调整navbar内容的左右距离
+      margin-top: 0px;
+      margin-bottom: 50; //底部 margin 不撑开距离
+      // box-shadow: 0 0 10px rgba(0,0,0,.7); //阴影
+      width: 1200px;
+
+      margin-left: 7.8%;
+      z-index: 9999;
+
 
     }
 }
