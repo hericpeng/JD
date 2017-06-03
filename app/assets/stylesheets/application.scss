@@ -17,10 +17,13 @@
 @import "bootstrap";
 @import "font-awesome";
 @import "navbar";
+@import "ph-navbar";
 @import "footer";
 @import "turncard";
 @import "devise";
 @import "productshow";
+@import "font-awesome";
+@import url( 'https://fonts.googleapis.com/earlyaccess/notosanssc.css');
 
 html {
     position: relative;
@@ -28,11 +31,24 @@ html {
 }
 
 body {
-    /* Margin bottom by footer height */
-    font-family: "Microsoft Yahei",verdana;
-    margin-top: 50px;
-    margin-bottom: 150px;
+    font-family: 'Noto Sans SC', sans-serif;
     background: linear-gradient(180deg,#E0FFFF,#E0E0E0);
+    // color: #2E2E2E;
+    // background: #FFFFFF;
+     margin-bottom: 150px;
+}
+
+a {
+    color: #6D6D6D;
+}
+
+a:hover {
+    color: #C81623;
+    text-decoration: none;
+}
+
+.main-content {
+    min-height: 850px;
 }
 //---------Box---------
 
@@ -70,6 +86,7 @@ body {
     }
 }
 //----ABOUT-----
+
 .sec-about {
     font-family: 'Open sans', sans-serif;
     padding: 100px 0;

@@ -1,0 +1,36 @@
+<div class="navbar-wrap  clearfix pl10 pr10 bg-gray f12">
+    <div class="jh_navbar w1200 bc">
+        <div class="jh_navbar-left ph_navabr-fontcolor fl"><%=link_to("欢迎来到猎人学院！", products_path)%></div>
+        <ul class="jh_navbar-list fr">
+            <% if !current_user %>
+                <li class="fl jh_navbar-listItem pr10 pl10">
+                    <%= link_to("注册", new_user_registration_path) %>
+                </li>
+                <li class="jh_navbar-spacer fl"></li>
+                <li class="fl jh_navbar-listItem pr10 pl10">
+                    <%= link_to("登入", new_user_session_path) %>
+                </li>
+            <% end %>
+            <% if current_user %>
+                <li class="fl jh_navbar-listItem pr10 pl10">
+                    Hi!
+       <%= current_user.email %>
+                </li>
+                <li class="jh_navbar-spacer fl"></li>
+                <li class="fl jh_navbar-listItem pr10 pl10">
+                    <%= link_to("我的订单", account_orders_path )%>
+                </li>
+                <li class="jh_navbar-spacer fl"></li>
+                <% if current_user.admin?%>
+                    <li class="fl jh_navbar-listItem pr10 pl10">
+                        <%= link_to '后台管理',admin_products_path %>
+                    </li>
+                    <li class="jh_navbar-spacer fl"></li>
+                <% end %>
+                <li class="fl jh_navbar-listItem pr10 pl10">
+                    <%= link_to("登出", destroy_user_session_path, method: :delete) %>
+                </li>
+            <% end %>
+        </ul>
+    </div>
+</div>

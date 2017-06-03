@@ -18,370 +18,13 @@
     color: #222222;
     text-decoration: none;
 }
-//以下内容全部为首页滑动大图的css。
-.bs-slider {
-    overflow: hidden;
-    max-height: 700px;
-    position: relative;
-    background: #000000;
-}
-
-.bs-slider:hover {
-    cursor: -moz-grab;
-    cursor: -webkit-grab;
-}
-
-.bs-slider:active {
-    cursor: -moz-grabbing;
-    cursor: -webkit-grabbing;
-}
-
-.bs-slider .bs-slider-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);// 调整蒙版的透明度
-}
-
-.bs-slider > .carousel-inner > .item > a > img,
-.bs-slider > .carousel-inner > .item > img {
-    margin: auto;
-    width: 100% !important;
-}
-/********************
-*****Slide effect
-**********************/
-.fade {
-    opacity: 1;
-}
-
-.fade .item {
-    top: 0;
-    z-index: 1;
-    opacity: 0;
-    width: 100%;
-    position: absolute;
-    left: 0 !important;
-    display: block !important;
-    -webkit-transition: opacity ease-in-out 1s;
-    -moz-transition: opacity ease-in-out 1s;
-    -ms-transition: opacity ease-in-out 1s;
-    -o-transition: opacity ease-in-out 1s;
-    transition: opacity ease-in-out 1s;
-}
-
-.fade .item:first-child {
-    top: auto;
-    position: relative;
-}
-
-.fade .item.active {
-    opacity: 1;
-    z-index: 2;
-    -webkit-transition: opacity ease-in-out 1s;
-    -moz-transition: opacity ease-in-out 1s;
-    -ms-transition: opacity ease-in-out 1s;
-    -o-transition: opacity ease-in-out 1s;
-    transition: opacity ease-in-out 1s;
-}
-/*---------- LEFT/RIGHT ROUND CONTROL ----------*/
-.control-round .carousel-control {
-    top: 47%;
-    opacity: 0;
-    width: 45px;
-    height: 45px;
-    z-index: 100;
-    color: #ffffff;
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
-    overflow: hidden;
-    line-height: 43px;
-    text-shadow: none;
-    position: absolute;
-    font-weight: normal;
-    background: transparent;
-    -webkit-border-radius: 100px;
-    border-radius: 100px;
-}
-
-.control-round:hover .carousel-control {
-    opacity: 1;
-}
-
-.control-round .carousel-control.left {
-    left: 1%;
-}
-
-.control-round .carousel-control.right {
-    right: 1%;
-}
-
-.control-round .carousel-control.left:hover,
-.control-round .carousel-control.right:hover {
-    color: #fdfdfd;
-    background: rgba(0, 0, 0, 0.5);
-    border: 0 transparent;
-}
-
-.control-round .carousel-control.left > span:nth-child(1) {
-    left: 45%;
-}
-
-.control-round .carousel-control.right > span:nth-child(1) {
-    right: 45%;
-}
-/*---------- INDICATORS CONTROL ----------*/
-.indicators-line > .carousel-indicators {
-    right: 45%;
-    bottom: 3%;
-    left: auto;
-    width: 90%;
-    height: 20px;
-    font-size: 0;
-    overflow-x: auto;
-    text-align: right;
-    overflow-y: hidden;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 1px;
-    white-space: nowrap;
-}
-
-.indicators-line > .carousel-indicators li {
-    padding: 0;
-    width: 15px;
-    height: 15px;
-    border: 1px solid rgb(158, 158, 158);
-    text-indent: 0;
-    overflow: hidden;
-    text-align: left;
-    position: relative;
-    letter-spacing: 1px;
-    background: rgb(158, 158, 158);
-    -webkit-font-smoothing: antialiased;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    margin-right: 5px;
-    -webkit-transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
-    transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
-    z-index: 10;
-    cursor: pointer;
-}
-
-.indicators-line > .carousel-indicators li:last-child {
-    margin-right: 0;
-}
-
-.indicators-line > .carousel-indicators .active {
-    margin: 1px 5px 1px 1px;
-    box-shadow: 0 0 0 2px #fff;
-    background-color: transparent;
-    position: relative;
-    -webkit-transition: box-shadow 0.3s ease;
-    -moz-transition: box-shadow 0.3s ease;
-    -o-transition: box-shadow 0.3s ease;
-    transition: box-shadow 0.3s ease;
-    -webkit-transition: background-color 0.3s ease;
-    -moz-transition: background-color 0.3s ease;
-    -o-transition: background-color 0.3s ease;
-    transition: background-color 0.3s ease;
-}
-
-.indicators-line > .carousel-indicators .active:before {
-    transform: scale(0.5);
-    background-color: #fff;
-    content: "";
-    position: absolute;
-    left: -1px;
-    top: -1px;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    -webkit-transition: background-color 0.3s ease;
-    -moz-transition: background-color 0.3s ease;
-    -o-transition: background-color 0.3s ease;
-    transition: background-color 0.3s ease;
-}
-/*---------- SLIDE CAPTION ----------*/
-.slide_style_left {
-    text-align: left !important;
-}
-
-.slide_style_right {
-    text-align: right !important;
-}
-
-.slide_style_center {
-    text-align: center !important;
-}
-
-.slide-text {
-    left: 0;
-    top: 25%;
-    right: 0;
-    margin: auto;
-    padding: 10px;
-    position: absolute;
-    text-align: left;
-    padding: 10px 85px;
-}
-
-.slide-text > h1 {
-    padding: 0;
-    color: #ffffff;
-    font-size: 70px;
-    font-style: normal;
-    line-height: 84px;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
-    display: inline-block;
-    -webkit-animation-delay: 0.7s;
-    animation-delay: 0.7s;
-}
-
-.slide-text > p {
-    padding: 0;
-    color: #ffffff;
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 300;
-    margin-bottom: 40px;
-    letter-spacing: 1px;
-    -webkit-animation-delay: 1.1s;
-    animation-delay: 1.1s;
-}
-
-.slide-text > a.btn-default {
-    color: #000;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 15px;
-    margin-right: 10px;
-    text-align: center;
-    padding: 17px 30px;
-    white-space: nowrap;
-    letter-spacing: 1px;
-    display: inline-block;
-    border: none;
-    text-transform: uppercase;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
-    -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.slide-text > a.btn-primary {
-    color: #ffffff;
-    cursor: pointer;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 15px;
-    margin-left: 10px;
-    text-align: center;
-    padding: 17px 30px;
-    white-space: nowrap;
-    letter-spacing: 1px;
-    background: #00bfff;
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: none;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
-    -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.slide-text > a:active,
-.slide-text > a:hover {
-    color: #ffffff;
-    background: #222222;
-    -webkit-transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
-    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
-}
-/*------------------------------------------------------*/
-/* RESPONSIVE
-/*------------------------------------------------------*/
-@media (max-width: 991px) {
-    .slide-text h1 {
-        font-size: 40px;
-        line-height: 50px;
-        margin-bottom: 20px;
-    }
-
-    .slide-text > p {
-        font-size: 18px;
-    }
-}
-/*---------- MEDIA 480px ----------*/
-@media (max-width: 768px) {
-    .slide-text {
-        padding: 10px 50px;
-    }
-
-    .slide-text h1 {
-        font-size: 30px;
-        line-height: 40px;
-        margin-bottom: 10px;
-    }
-
-    .slide-text > p {
-        font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 20px;
-    }
-
-    .control-round .carousel-control {
-        display: none;
-    }
-}
-@media (max-width: 480px) {
-    .slide-text {
-        padding: 10px 30px;
-    }
-
-    .slide-text h1 {
-        font-size: 20px;
-        line-height: 25px;
-        margin-bottom: 5px;
-    }
-
-    .slide-text > p {
-        font-size: 12px;
-        line-height: 18px;
-        margin-bottom: 10px;
-    }
-
-    .slide-text > a.btn-default,
-    .slide-text > a.btn-primary {
-        font-size: 10px;
-        line-height: 10px;
-        margin-right: 10px;
-        text-align: center;
-        padding: 10px 15px;
-    }
-
-    .indicators-line > .carousel-indicators {
-        display: none;
-    }
-}
 
 
-//
-
-/*字体颜色和背景颜色*/
-.lp-bg-gray {
-  background: #F4F3F3;
-  box-shadow: inset 0 1px 1px rgba(0,0,0,0.1), inset 0 -1px 1px rgba(0,0,0,0.1);
-}
-
+//首页大图
 .lp {
 	color: #4C585F;
 	background: #fff;
-	font-family:  'Open Sans','open_sans','PingFang SC',"Microsoft YaHei","微软雅黑",STXihei,"华文细黑",sans-serif;
+	// font-family:  'Open Sans','open_sans','PingFang SC',"Microsoft YaHei","微软雅黑",STXihei,"华文细黑",sans-serif;
 	line-height: 1.5;
 	.container-fluid {
 		width: 1200px;
@@ -394,136 +37,87 @@
 	}
 }
 
-
-.lp-advantage {
-	.lp-advantage-img {
-		width: 80px;
-		height: 80px;
-		border-radius: 50%;
-	}
-	.lp-advantage-title {
-		color: #444;
-		line-height: 1.2;
-	}
-	.lp-advantage-desc {
-		line-height: 1.7;
-	  letter-spacing: 0;
-	  font-size: 16px;
-    color: #444;
-	}
-
-}
-
-/*home-people*/
-.lp-feedback {
-	.home-people {
-	  .person {
-	    display: inline-block;
-	    top: 0;
-	    padding-bottom: 20px;
-	    position: relative;
-	    .avata-wrapper {
-	      position: absolute;
-	      width: 96px;
-	      height: 96px;
-	      padding: 5px;
-	      left: 50%;
-	      top: 10px;
-	      margin-left: -53px;
-	      border: dotted 1px #E6EDEF;
-	      border-radius: 53px;
-	      overflow: hidden;
-	    }
-	    .avata {
-	      width: 100%;
-	      height: 100%;
-	      border-radius: 50%;
-	    }
-	    .intro {
-	      margin-top: 108px;
-	      .name {
-	        text-align: center;
-	      }
-	      .invest {
-	        float: right;
-	        margin-right: 20px;
-	        font-size: 14px;
-	        line-height: 28px;
-	        color: #fff;
-	        font-weight: bold;
-	      }
-	    }
-	    .words {
-	      position: relative;
-	      margin-top: 10px;
-	      padding: 41px 20px 20px 25px;
-	      border-radius: 3px;
-	      line-height: 25px;
-	      text-align: left;
-	      font-weight: bold;
-	      overflow: hidden;
-	      .bg {
-	        position: absolute;
-	        display: block;
-	        top: 0;
-	        left: 0;
-	        width: 100%;
-	        height: 100%;
-	        background: #fff;
-	        opacity: 0.7;
-	        z-index: 0;
-	      }
-	      .quote {
-	        position: absolute;
-	        color: #aaa;
-	        font-size: 16px;
-	      }
-	      .quote-l {
-	        top: 10px;
-	        left: 5px;
-	      }
-	      .quote-r {
-	        bottom: 10px;
-	        right: 5px;
-	      }
-	      .content {
-	        position: relative;
-	        height: 75px;
-	        overflow: hidden;
-	        font-size: 14px;
-	        z-index: 0;
-	      }
-	    }
-	  }
+/*button*/
+.lp-b-btn {
+  color: #fff;
+  padding: 12px 40px;
+  background: #1ecd97;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: bold;
+  transition: all .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -o-transition: all .4s;
+  -ms-transition: all .4s;
+  &:focus,
+	&:hover {
+	  color: #fff;
+	  background-color: #1ecd97;
+	  border-color: #1ecd97;
 	}
 }
 
-.lp-action {
-	background: url('https://ww2.sinaimg.cn/large/006tNbRwgy1fd6gpqtd6tj31hc0dq0xk.jpg') center center no-repeat;
-	height: 200px;
-	.text-content {
-		top: 0;
-		left: 0;
-		width: 100%;
-		z-index: 10;
-	}
-	p {
-		color: #fff;
-	}
-	&::before {
+.lp-banner {
+	color: #fff;
+	height: 500px;
+  overflow: hidden;
+  .jumbotron {
+    padding-bottom: 110px;
+    margin: 0 -15px;
+    border-radius: 0;
+    padding-top: 0;
+  }
+}
+.jumbotron {
+  background-image: url(https://ww3.sinaimg.cn/large/006tKfTcgy1fg79vvnwipj31kw0mr4qp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 110px;
+  background-position: center -0px;
+  margin: 0 -15px 0;
+  color: #fff;;
+  position: relative;
+  height: 500px;
+  letter-spacing: 2px;
+
+  &::before {
     content: "";
     width: 100%;
     height: 100%;
-    background-color: transparentize(#000, .45);
+    background-color: transparentize(#000, .95);//调整蒙版的颜色和透明度
     position: absolute;
     top: 0;
     left: 0;
   }
+  .text-content {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
-// 适应小屏幕
-@media (max-width: 1200px) {
-	.lp-banner {
-		height: 460px;
-	}
+.jumbotron-title {
+	color: #fff !important;
+  text-align: center;
+  padding: 125px 20px 0;
+  font-size: 40px !important;
+  text-align: center;
+  line-height: 1.5;
+}
+.jumbotron-slogan {
+	color: #fff;
+  margin: 44px auto 0;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+}
+.jumbotron-lead {
+  margin-top: 40px;
+  margin-bottom: 230px;
+  text-align: center;
+  color: white;
 }
