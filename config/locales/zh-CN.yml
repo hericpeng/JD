@@ -1,2 +1,116 @@
 zh-CN:
-  hello: "哈啰，你好！"
+  #--=== navbar ===--#
+  category-name: "%{name}"
+  language: "语系切换"
+  classification: "分类浏览"
+  Hunters: "知识猎人公会"
+  wish-list: "愿望清单"
+  login: "登录"
+  signup: "注册"
+  admin-access: "Admin 选单"
+  user-order: "我的订单"
+  logout: "登出"
+  hello: "你好"
+  01: "寻宝"
+
+
+  #--=== 首页 ===--#
+  hunter-college: "欢迎来到猎人学院!"
+  wealth: "通往财富自由之路"
+  opportunity: "人人都至少有一次机会"
+  read-meetup: "极速读书会"
+  meetup: "这也许是你参加的最后一个读书会"
+  Hunter-College: "猎人学院"
+  best-course: "为你狩猎最好的课程"
+  hunting: "开始狩猎"
+
+  introduction: "简介"
+  subscribe: "订阅"
+
+  great-course: "大 咖 课 程"
+  course: "课程"
+  browse: "浏览"
+  Heart-flow: "心流学习法"
+  fast-learning: "快速掌握任何技能"
+  see: "查看详情"
+  wealth-introduction: "在这个课程里，亿万富翁李笑来带着大家每周更新一个观念，一年 52 次深入探讨，请大家上车，一起赶路，通往财富自由。"
+  read-meetup-introduction: "首个真正具备「读书会」效果的「读书会」，独家上瘾式读书法让人停不下来。
+              和数万人共同享受大脑升级的极致快感。告别低效无用读书，立即产生行动改变。在这里，人人都有极速阅读能力。"
+  Heart-flow-introduction: "关于学习方法的知识，通过心流让短时间内激发你的大脑潜能，让你快速进入学习状态推进学习进度，缩短学习时间，达到快速学习的目的。"
+
+  t-contents-00: "「我们可以给您提供什么」"
+  t-contents-01: "最好的课程"
+  t-contents-02: "我们通过大数据搜索，为您猎取最好的互联网课程，只有您想不到的好课程，没有我们猎不到的好课程。"
+  t-contents-03: "良好的学习体验"
+  t-contents-04: "猎人学院采用学习游戏化的设计理念，协助你培养学习习惯，引用游戏化的相关理念，不同的课程将使用不同的学习策略和授课形式。"
+  t-contents-05: "成长社群"
+  t-contents-06: "一个走的更快，但是一群人会走的更远，为成长者搭建一个学习型社群，互相学习，共同进步。"
+
+  t-feedback-00: "「猎人学员」的超级学员"
+  t-feedback-01: "听听他们是怎么评价的"
+  t-feedback-02: "罗振宇"
+  t-feedback-03: "作为一个知识的重度依赖者，一直在困惑互联网的知识过载，苦苦不知道该如何寻找好的知识课程，「猎人学院」帮我解决了这一大难题。"
+  t-feedback-04: "王秒"
+  t-feedback-05: "在学习的过程中，「猎人学院」不但提供优质的课程，还为很多课程提供了专业的定制化工具，大大提高了学习的效率，赞！"
+  t-feedback-06: "Nic"
+  t-feedback-07: "代码敲到累的时候，上「猎人学院」逛一逛，寻找一些轻松的自己喜欢的课程，可以放松一下大脑，开开脑洞，编出代码更完美。"
+
+
+  #--=== 提示讯息 ===--#
+  message-add-to-cart-success: 成功加入购物车！
+  message-already-added: 您的购物车已有此商品。
+  message-confirm-clear-cart: 您确定要清空整个购物车吗？
+  message-clear-cart-success: 已清空购物车。
+  message-payment-success: 已完成付款。
+  message-cancel-request-sent: 已提交申请，J&A SELECT 会尽速与您联系。
+  message-payment-failed: 付款失败。
+
+
+  #--=== 愿望清单（购物车） ===--#
+  # 购物车 #
+  cart-index: 购物车
+  cart-clear: 清空购物车
+  cart-list: 购物清单
+
+  f-cart-product-info: 商品资讯
+  f-cart-product-price: 单价
+  f-cart-product-quantity: 数量
+  f-cart-product-option: 操作选项
+  f-cart-total: 总计
+
+  btn-checkout: 前往结帐
+
+  cart-no-data: 您尚未加入任何商品。
+  cart-suggest: J & A SELECT 诚挚向您推荐：
+
+# 生成订单 #
+  checkout-index: 订单资讯
+
+  f-billing-info: 付款资讯
+  f-order maker: 订购人
+  f-billing-name: 付款人 - 姓名
+  f-billing-address: 付款人 - 帐单地址
+  f-shipping-info: 寄送资讯
+  f-addressee: 收件人
+  f-shipping-name: 收件人 - 姓名
+  f-shipping-phone: 收件人 - 电话（选填）
+  f-shipping-address: 收件人 - 收货地址
+  f-input-address: 请输入地址
+  f-payment-method: 付款方式
+
+  billing-name: 真实姓名
+  billing-address: 帐单地址
+  shipping-name: 真实姓名
+  shipping-phone: 联络电话
+  shipping-address: 收件地址
+
+  btn-order-create: 确认下单
+
+  # 订单 #
+  order-show: 订单明细
+
+  btn-pay: 线上结帐
+  btn-apply-to-cancel: 申请取消订单
+
+  order-payment-method: 线上支付
+  order-paid: < 此笔订单已完成结帐，感谢您的购买。 >
