@@ -1,3 +1,5 @@
 class ProductList < ApplicationRecord
   belongs_to :order
+  has_many :photos
+  accepts_nested_attributes_for :photos
 end

@@ -111,7 +111,7 @@
             <div class=" col-xs-12 col-sm-2 col-md-3 product-content wow fadeInUp" data-wow-delay="0.4s">
                 <%= link_to product_path(product) do %>
                     <!-- 商品圖片 -->
-                    <% if  product.image.present? %>
+                    <% if product.image.present? %>
                         <!-- 顯示第一張圖片 -->
                         <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
                     <% else %>
