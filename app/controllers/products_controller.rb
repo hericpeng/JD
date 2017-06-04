@@ -5,9 +5,9 @@ class ProductsController < ApplicationController
     if params[:category].blank?
       @products = Product.all
     else
-      @category_id = Category.find_by(name: params[:category]).id #先找到category_id
+      @category_id = Category.find_by(name: params[:category]).id
 
-      @products = Product.where(category_id:  @category_id) #再根据category_id找到相对应的产品。
+      @products = Product.where(category_id:  @category_id) 
 
     end
   end
