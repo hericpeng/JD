@@ -12,6 +12,6 @@ module Jdstore
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
-    config.i18n.default_locale = "zh-CN" #预设语系设为简体中文
+    config.i18n.default_locale = "zh-TW" #预设语系设为繁体中文
   end
 end
