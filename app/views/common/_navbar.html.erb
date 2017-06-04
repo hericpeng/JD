@@ -53,19 +53,21 @@
                 <% end %>
             </div>
             <ul class="nav navbar-nav navbar-right">
+                <!-- 收藏标签链接 -->
+                <li><%= link_to(content_tag(:i, "我的收藏", class: "fa fa-heart fa-md"), products_path(:favorite => "yes"))%> </li>
                 <!-- 语系下拉菜单 -->
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t("language") %><span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <!-- 语系切换-->
-                  <li><%= link_to "简体中文", :controller => controller_name, :action => action_name, :locale => "zh-CN" %></li>
-                  <li><%= link_to "繁體中文", :controller => controller_name, :action => action_name, :locale => "zh-TW" %></li>
+                    <li><%= link_to "简体中文", :controller => controller_name, :action => action_name, :locale => "zh-CN" %></li>
+                    <li><%= link_to "繁體中文", :controller => controller_name, :action => action_name, :locale => "zh-TW" %></li>
                 </ul>
+                <!-- 愿望清单(购物车功能) -->
                 <li>
                     <%= link_to carts_path do  %>
                         <%= t('wish-list') %> <img src='<%= image_url 'cart.png' %>'height="18" width="18">( <%= current_cart.products.count %> )
                     <% end %>
                 </li>
-
             </ul>
         </div>
         <!-- /.navbar-collapse -->
