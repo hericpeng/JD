@@ -119,9 +119,16 @@
                     <% end %>
                 <% end %>
                 <div class="product-info">
+                    <!-- 收藏爱心按钮 -->
+                    <% if !product.users.include?(current_user) %>
+                      <%= link_to("",add_to_favorite_product_path(product),method: :post, class: "fa fa-heart") %>
+                    <% else %>
+                      <%= link_to("", quit_favorite_product_path(product),method: :post,  class: "fa fa-heart", style: "color:red;") %>
+                    <% end %>
+                    <!-- 商品名称 -->
                     <ul><%= link_to(product.title , product_path(product)) %></ul>
+                    <!-- 商品价格 -->
                     <ul>￥<%= product.price %></ul>
-
                 </div>
             </div>
         <% end %>
