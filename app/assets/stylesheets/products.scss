@@ -40,6 +40,22 @@ a:hover {
     //   opacity: 0.75;
     // }  这一条是鼠标移动到图片上，会添加上一层白色的蒙版
 }
+
+
+/*排序*/
+.categoryList {
+  margin: 20px auto;
+  width: 1200px;
+  overflow: hidden;
+  position: relative;
+left:50%;
+}
+
+.categoryList-item {
+  float: left;
+  width: 108px;
+  height: 42px;
+}
 /*===== 產品列表內容設置 =====*/
 .product-content {
     width: 100%;
