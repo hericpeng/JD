@@ -55,7 +55,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <!-- 收藏标签链接 -->
 
-                <li><%= link_to("我的收藏", products_path(:favorite => "yes"))%> </li>
+                <li><%= link_to(t('favorite'), products_path(:favorite => "yes"))%> </li>
 
                 <!-- 语系下拉菜单 -->
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t("language") %><span class="caret"></span></a>
