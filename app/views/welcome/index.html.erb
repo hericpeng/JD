@@ -69,7 +69,7 @@
                                         <h4>340</h4>
                                         <p>
                                             <%= t ("course") %>
-  										                   	</p>
+  										                  </p>
                                     </div>
                                 </div>
                             </div>
@@ -100,14 +100,14 @@
                         </div>
                         <div class="content">
                             <div class="main">
-                                  <h4 class="text-center">「 <%= t ("read-meetup") %> 」</h4>
+                                <h4 class="text-center">「 <%= t ("read-meetup") %> 」</h4>
                                 <h5 class="profession">Xdite</h5>
                                 <p class="text-center"></br><%= t("meetup") %></p>
                         </div>
                         <div class="footersmall">
                             <div class="rating">
                                 <i class="fa fa-mail-forward"></i> <%= t("see") %>
-            </div>
+								            </div>
                         </div>
                     </div>
                 </div>
@@ -164,18 +164,18 @@
                         <img src="https://ww3.sinaimg.cn/large/006tNbRwgy1fg8eh2jdmpj30cs08i74a.jpg"/>
                     </div>
                     <div class="user">
-                        <img class="img-circle" src="https://ww3.sinaimg.cn/large/006tNbRwgy1fg8el4tmp9j30i40i4dgy.jpg"/>
+												<img class="img-circle" src="https://ww4.sinaimg.cn/large/006tNc79gy1ffu06uwp4qj308c08cwez.jpg"/>
                     </div>
                     <div class="content">
                         <div class="main">
                                 <h4 class="text-center">「 <%= t("Heart-flow") %> 」</h4>
-                            <p class="profession">乌龙明月</p>
+                            <p class="profession">赵龙</p>
                             <p class="text-center"></br><%= t("fast-learning") %></p>
                     </div>
                     <div class="footersmall">
                         <div class="rating">
                             <i class="fa fa-mail-forward"></i> <%= t("see") %>
-  						</div>
+					  						</div>
                     </div>
                 </div>
             </div>
@@ -193,19 +193,19 @@
                                 <h4>530</h4>
                                 <p>
                                     <%= t("browse") %>
-  										             	</p>
+									             	</p>
                             </div>
                             <div class="stats">
                                 <h4>120</h4>
                                 <p>
                                     <%= t("subscribe") %>
-  									             		</p>
+								             		</p>
                             </div>
                             <div class="stats">
                                 <h4>11</h4>
                                 <p>
                                     <%= t ("course") %>
-  									             		</p>
+								             		</p>
                             </div>
                         </div>
                     </div>
@@ -231,55 +231,57 @@
                     <img src="https://ww2.sinaimg.cn/large/006tNbRwgy1fg8emchyb5j307n053a9z.jpg"/>
                 </div>
                 <div class="user">
-                    <img class="img-circle" src="https://ww4.sinaimg.cn/large/006tNc79gy1ffu06uwp4qj308c08cwez.jpg"/>
+										<img class="img-circle" src="https://ww3.sinaimg.cn/large/006tNbRwgy1fg8el4tmp9j30i40i4dgy.jpg"/>
                 </div>
                 <div class="content">
                     <div class="main">
-                            <h4 class="text-center">「 心流学习法 」</h4>
-                        <p class="profession">赵龙</p>
-                        <p class="text-center"></br>"快速入门任何职业技能"</p>
-                </div>
+                        <h4 class="text-center">「 <%= t("super-action") %> 」</h4>
+                        <p class="profession">乌龙明月</p>
+                        <p class="text-center"></br><%= t("super-action-class") %></p>
+		                </div>
                 <div class="footersmall">
                     <div class="rating">
-                        <i class="fa fa-mail-forward"></i> 查看详情
-          </div>
+                        <i class="fa fa-mail-forward"></i> <%= t("see") %>
+					          </div>
                 </div>
             </div>
         </div>
         <!-- end front panel -->
         <div class="back">
             <div class="header">
-                <h4 class="profession">课程简介</h4>
+                <h4 class="profession"><%= t("introduction") %></h4>
             </div>
             <div class="content">
                 <div class="main">
                     <!-- <h4 class="text-center">Job Description</h4> -->
-                    <p class="text-center">关于学习方法的知识，通过心流学习法可以让你在短时间内进入学习状态，高效利用时间，大量压缩准备时间，达到快速学习的目的。</p>
+                    <p class="text-center">
+											<%= t("super-action-introduction") %></h4>
+										</p>
                     <div class="stats-container">
                         <div class="stats">
                             <h4>530</h4>
                             <p>
-                                浏览
-                                </p>
+                                <%= t("browse") %>
+                            </p>
                         </div>
                         <div class="stats">
                             <h4>120</h4>
                             <p>
-                                订阅
-                                </p>
+                                <%= t("subscribe") %>
+                            </p>
                         </div>
                         <div class="stats">
                             <h4>11</h4>
                             <p>
-                                课程
-                                </p>
+                                <%= t ("course") %>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="footersmall">
                 <div class="social-links text-center">
-                    <a href="https://floating-earth-63565.herokuapp.com">订购课程</a>
+                    <a href="https://floating-earth-63565.herokuapp.com"><%= t("subscribe") %></a>
                 </div>
             </div>
         </div>
@@ -343,8 +345,8 @@
                     <div class="intro clearfix wow flipInX" data-wow-delay="0.8s">
                         <div class="name">
                             <%= t ("t-feedback-02") %>
-  	          </div>
-                    </div>
+					  	          </div>
+	                  </div>
                     <div class="words wow zoomIn" data-wow-delay="1s">
                         <span class="bg"></span>
                         <span class="fa fa-quote-left quote quote-l iconfont"></span>
@@ -359,7 +361,7 @@
                     <div class="intro clearfix wow flipInX" data-wow-delay="0.8s">
                         <div class="name">
                             <%= t ("t-feedback-04") %>
-  	          </div>
+					  	          </div>
                     </div>
                     <div class="words wow zoomIn" data-wow-delay="1s">
                         <span class="bg"></span>
@@ -375,7 +377,7 @@
                     <div class="intro clearfix wow flipInX" data-wow-delay="0.8s">
                         <div class="name">
                             <%= t ("t-feedback-06") %>
-  	          </div>
+					  	          </div>
                     </div>
                     <div class="words wow zoomIn" data-wow-delay="1s">
                         <span class="bg"></span>

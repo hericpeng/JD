@@ -1,14 +1,16 @@
 <div class="navbar-wrap  clearfix pl10 pr10 bg-gray f12">
+
     <div class="w1200 bc">
         <div class="fl"><%=link_to("欢迎来到猎人学院！", root_path)%></div>
         <ul class=" fr">
             <% if !current_user %>
                 <li class="fl  pr10 pl10">
-                    <%= link_to("注册", new_user_registration_path) %>
+                    <%= link_to(t('signup'), new_user_registration_path) %>
                 </li>
                 <li class="ph_navbar-spacer fl"></li>
                 <li class="fl pr10 pl10">
-                    <%= link_to("登入", new_user_session_path) %>
+                  <%= link_to(t('login'), new_user_session_path) %>
+
                 </li>
             <% end %>
             <% if current_user %>
@@ -16,19 +18,22 @@
                     Hi!
        <%= current_user.email %>
                 </li>
+
                 <li class="ph_navbar-spacer fl"></li>
                 <li class="fl pr10 pl10">
-                    <%= link_to("我的订单", account_orders_path )%>
+                      <%= link_to(t('user-order'), account_orders_path )%>
+
                 </li>
                 <li class="fl"></li>
                 <% if current_user.admin?%>
+
                     <li class="fl pr10 pl10">
-                        <%= link_to '后台管理',admin_products_path %>
+                          <%= link_to t('admin-access'),admin_products_path %>
                     </li>
                     <li class="ph_navbar-spacer fl"></li>
                 <% end %>
                 <li class="fl  pr10 pl10">
-                    <%= link_to("登出", destroy_user_session_path, method: :delete) %>
+                  <%= link_to(t('logout'), destroy_user_session_path, method: :delete) %>
                 </li>
             <% end %>
         </ul>

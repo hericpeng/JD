@@ -17,10 +17,10 @@
                 </li> -->
                 <!--===商品分类===-->
                 <li>
-                  <a href="/products?category=课程" style="<%= if !params[:where].blank? && params[:where]=="课程" then "color:#B28435;" end%>">课程</a>
+                  <a href="/products?category=课程" style="<%= if !params[:where].blank? && params[:where]=="课程" then "color:#B28435;" end%>"><%= t('course') %></a>
                 </li>
                 <li>
-                  <a href="/products?category=工具" style="<%= if !params[:where].blank? && params[:where]=="工具" then "color:#B28435;" end%>">工具</a>
+                  <a href="/products?category=工具" style="<%= if !params[:where].blank? && params[:where]=="工具" then "color:#B28435;" end%>"><%= t('tool') %></a>
                 </li>
                 <!--下拉菜单-->
                 <!-- <li class="dropdown">
@@ -54,7 +54,9 @@
             </div>
             <ul class="nav navbar-nav navbar-right">
                 <!-- 收藏标签链接 -->
+
                 <li><%= link_to("我的收藏", products_path(:favorite => "yes"))%> </li>
+
                 <!-- 语系下拉菜单 -->
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t("language") %><span class="caret"></span></a>
                 <ul class="dropdown-menu">
