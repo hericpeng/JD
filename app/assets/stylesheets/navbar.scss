@@ -2,32 +2,24 @@
 .navbar-default {
     background-color: #02061A;
     // //背景颜色
-    border-color: #02061A; //边框色
+    border-color: #0F504D; //边框色
 // background: rgba(2,6,26,0.99);
     padding: 5px 50px;//调整navbar内容的左右距离
     margin-top: 30px;
     margin-bottom: 30; //底部 margin 不撑开距离
     // box-shadow: 0 0 10px rgba(0,0,0,.7); //阴影
-    width: 1200px;
-
-    margin-left: 7.8%;
     z-index: 9999;
 
     &.show_move{
       background-color: #02061A;
       // //背景颜色
-      border-color: #02061A; //边框色
+      border-color: #0F504D; //边框色
   // background: rgba(2,6,26,0.99);
       padding: 5px 50px;//调整navbar内容的左右距离
       margin-top: 0px;
       margin-bottom: 50; //底部 margin 不撑开距离
       // box-shadow: 0 0 10px rgba(0,0,0,.7); //阴影
-      width: 1200px;
-
-      margin-left: 7.8%;
       z-index: 9999;
-
-
     }
 }
 
@@ -45,8 +37,6 @@
     // color: #696969; //字体颜色
     color: #fff; //字体颜色
     margin-top: -10px;
-
-
     padding: 10px 15px; //上下10px，左右15px
     line-height: 50px; //文字行高
 }
@@ -56,7 +46,6 @@
     color: #FF6F00; //鼠标放置在链接上的文字颜色
     background-color: transparent; //鼠标放置在链接上的背景颜色，这里设为透明
 }
-
 //修改导航栏链接颜色
 .navbar-default .navbar-nav > li > a {
     color: #fff; //产品注册字体颜色
