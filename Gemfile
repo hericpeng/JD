@@ -52,6 +52,8 @@ gem 'jquery-turbolinks'
 # 多语言设置
 gem 'i18n'
 gem 'rails-i18n'
+# 监测 heroku 上的错误信息
+gem 'rollbar'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
