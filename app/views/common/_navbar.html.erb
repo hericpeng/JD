@@ -4,12 +4,6 @@
             <li>
                 <a class="brand" href="/products"><img src='<%= image_url 'hunter.png' %>' height="50" width="150" ></a>
             </li>
-            <!-- <li >
-                    <a href="/products/search?utf8=✓&amp;q=知识宝藏">课程</a>
-                </li>
-                <li >
-                    <a href="/products/search?utf8=✓&amp;q=效率工具">工具</a>
-                </li> -->
             <!--===商品分类===-->
             <li>
                 <a href="/products?category=课程" style="<%= if !params[:where].blank? && params[:where]=="课程" then "color:#B28435;" end%>"><%= t('course') %></a>
@@ -57,8 +51,8 @@
                     <li><%= link_to "简体中文", :controller => controller_name, :action => action_name, :locale => "zh-CN" %></li>
                     <li><%= link_to "繁體中文", :controller => controller_name, :action => action_name, :locale => "zh-TW" %></li>
                 </ul>
-                <!-- 愿望清单(购物车功能) 右边10px为了页面对齐-->
-                <li style="margin-right:10px;">
+                <!-- 愿望清单(购物车功能)-->
+                <li >
 
                     <%= link_to carts_path do  %>
                         <%= t('wish-list') %> <img src='<%= image_url 'cart.png' %>'height="18" width="18" >( <%= current_cart.products.count %> )
