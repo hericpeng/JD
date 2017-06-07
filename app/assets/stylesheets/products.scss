@@ -311,6 +311,11 @@ h2 {
     text-align: center !important;
 }
 
+
+.slide-image{
+width: auto;
+height: auto;
+}
 .slide-text {
     left: 0;
     top: 25%;
@@ -350,13 +355,15 @@ h2 {
 .slide-text > a.btn-default {
     color: #000;
     font-weight: 400;
-    font-size: 13px;
-    line-height: 15px;
+    font-size: 15px;
+    line-height: 14px;
     margin-right: 10px;
     text-align: center;
-    padding: 17px 30px;
+    padding: 20px 30px;
     white-space: nowrap;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    background: #fff;
+    border-radius: 6px;
     display: inline-block;
     border: none;
     text-transform: uppercase;
@@ -370,18 +377,19 @@ h2 {
     color: #ffffff;
     cursor: pointer;
     font-weight: 400;
-    font-size: 13px;
-    line-height: 15px;
+    font-size: 15px;
+    line-height: 14px;
     margin-left: 10px;
     text-align: center;
-    padding: 17px 30px;
+    padding: 20px 30px;
     white-space: nowrap;
-    letter-spacing: 1px;
-    background: #00bfff;
+    letter-spacing: 2px;
+    background: #1ecd97;
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
     border: none;
+    border-radius: 6px;
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
     -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
