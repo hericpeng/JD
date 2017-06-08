@@ -46,17 +46,48 @@ a:hover {
 
 /*排序*/
 .categoryList {
-  margin: 20px auto;
+  margin: 0px auto;
   width: 1200px;
+
   overflow: hidden;
   position: relative;
-  background-color: #212121;
+background: #F5F5F5;
 }
-
+.categoryList-center {
+  margin: 0px auto;
+  width: 360px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
 .categoryList-item {
   float: left;
-  width: 108px;
-  height: 42px;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  margin: 10px 10px;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  // padding: 20px 30px;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  background: #fff;
+  border-radius: 6px;
+  display: inline-block;
+  border: none;
+  text-transform: uppercase;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.categoryList-item:active,
+.categoryList-item:hover {
+    color: #ffffff;
+    background: #1ecd97;
+    -webkit-transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 /*===== 產品列表內容設置 =====*/
 .product-content {
@@ -106,6 +137,10 @@ h2 {
     line-height: 20px;
     min-height: 55px;
 }
+
+/*===== 分类栏按钮 =====*/
+
+
 
 
 //===========以下内容全部为首页滑动大图的css。
