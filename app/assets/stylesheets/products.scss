@@ -150,8 +150,8 @@ h2 {
     position: relative;
     background: #000000;
     width: 1200px;
-    height: 80%;
-    margin: 78px auto;
+    height: 400px;
+    margin: 78px auto 18px;//调整轮播图上下左右的距离。
 }
 
 .bs-slider:hover {
@@ -263,14 +263,14 @@ h2 {
 }
 /*---------- INDICATORS CONTROL ----------*/
 .indicators-line > .carousel-indicators {
-    right: 45%;
+    // right: 45%;
     bottom: 3%;
     left: auto;
-    width: 90%;
+    width: 100%;
+    margin: 0 auto;
     height: 20px;
     font-size: 0;
     overflow-x: auto;
-    text-align: right;
     overflow-y: hidden;
     padding-left: 10px;
     padding-right: 10px;
@@ -353,7 +353,7 @@ height: auto;
 }
 .slide-text {
     left: 0;
-    top: 25%;
+    top: 10%;
     right: 0;
     margin: auto;
     padding: 10px;
@@ -365,7 +365,7 @@ height: auto;
 .slide-text > h1 {
     padding: 0;
     color: #ffffff;
-    font-size: 70px;
+    font-size: 50px; //修改最大的字体的大小。
     font-style: normal;
     line-height: 84px;
     margin-bottom: 30px;
@@ -389,12 +389,13 @@ height: auto;
 
 .slide-text > a.btn-default {
     color: #000;
+    height: 50px;
     font-weight: 400;
     font-size: 15px;
     line-height: 14px;
     margin-right: 10px;
     text-align: center;
-    padding: 20px 30px;
+    padding: 18px 30px;
     white-space: nowrap;
     letter-spacing: 2px;
     background: #fff;
@@ -410,13 +411,14 @@ height: auto;
 
 .slide-text > a.btn-primary {
     color: #ffffff;
+    height: 50px;
     cursor: pointer;
     font-weight: 400;
     font-size: 15px;
     line-height: 14px;
     margin-left: 10px;
     text-align: center;
-    padding: 20px 30px;
+    padding: 18px 30px;
     white-space: nowrap;
     letter-spacing: 2px;
     background: #1ecd97;
