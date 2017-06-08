@@ -38,7 +38,7 @@ class Admin::CategoriesController < ApplicationController
   def destroy
     @category = Category.find(params[:id])
     @category.destroy
-    redirect_to admin_categories_path
+    redirect_to admin_categories_path, warning: "你已删除这个分类"
   end
 
   private
