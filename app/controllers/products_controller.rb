@@ -4,13 +4,17 @@ class ProductsController < ApplicationController
   def index
     if params[:category].blank?
       @products = Product.all
-      if params[:favorite] == "yes"
-        @products = current_user.products
-      end
     else
       @category_id = Category.find_by(name: params[:category]).id #先找到category_id
       @products = Product.where(category_id:  @category_id) #再根据category_id找到相对应的产品。
-    end    
+    end
+  end
+
+  def favorite
+    @products = Product.all
+    if params[:favorite] == "yes"
+      @products = current_user.products
+    end
   end
 
   def add_to_favorite
