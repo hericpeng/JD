@@ -1,9 +1,70 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 @import "base";
 
+.story-box {
+    text-align: center;
+    padding: 25px 62.5px 50px;
+    background: #f2f2f2;
+
+    .content {
+        margin: 0 auto;
+        width: 1000px;
+    }
+
+    h3 {
+        font-size: 25px;
+        text-align: center;
+        color: #2c3e50;
+    }
+
+    h5 {
+        font-size: 18px;
+        text-align: left;
+        color: #2c3e50;
+        margin-top: 30px;
+    }
+
+    .story-text {
+        font-size: 15px;
+        line-height: 34px;
+        color: #666;
+        padding: 0 50px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    p {
+        color: #666;
+        line-height: 30px;
+        text-align: justify;
+    }
+
+    img {
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    hr {
+        height: 1.5px;
+        background-color: #999;
+    }
+
+    .short-line {
+        display: block;
+        background: #1ecd97;
+        border-style: none;
+        border-radius: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        z-index: 53;
+        width: 50px;
+        height: 3px;
+        position: relative;
+    }
+}
 
 .navbar-wrap {
     height: 30px;
@@ -14,108 +75,114 @@
 }
 //====翻转小卡片（查看详情）颜色======
 
-
-.body{
-
-}
+.body {}
 //首页大图
+
 .lp {
-	color: #4C585F;
-	background: #fff;
-	// font-family:  'Open Sans','open_sans','PingFang SC',"Microsoft YaHei","微软雅黑",STXihei,"华文细黑",sans-serif;
-	line-height: 1.5;
-	.container-fluid {
-		width: 1200px;
-	}
-	.title {
-		font-weight: normal;
-	}
-	.light {
+    color: #4C585F;
+    background: #fff;
+    // font-family:  'Open Sans','open_sans','PingFang SC',"Microsoft YaHei","微软雅黑",STXihei,"华文细黑",sans-serif;
+    line-height: 1.5;
 
-	}
+    .container-fluid {
+        width: 1200px;
+    }
+
+    .title {
+        font-weight: normal;
+    }
+
+    .light {}
 }
-
 /*button*/
 .lp-b-btn {
-  color: #fff;
-  padding: 12px 40px;
-  background: #1ecd97;
-  color: #fff;
-  letter-spacing: 2px;
-  font-weight: bold;
-  transition: all .4s;
-  -webkit-transition: all .4s;
-  -moz-transition: all .4s;
-  -o-transition: all .4s;
-  -ms-transition: all .4s;
-  &:focus,
-	&:hover {
-	  color: #fff;
-	  background-color: #1ecd97;
-	  border-color: #1ecd97;
-	}
+    color: #fff;
+    padding: 10px 30px;
+    // background: #1ecd97;
+    border: 2px solid #1ecd97;
+        border-radius: 0.2em;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+
+    &:focus,
+    &:hover {
+        color: #fff;
+        background-color: #1ecd97;
+        border-color: #1ecd97;
+    }
 }
 
 .lp-banner {
-	color: #fff;
-	height: 500px;
-  overflow: hidden;
-  .jumbotron {
-    padding-bottom: 110px;
-    margin: 0 -15px;
-    border-radius: 0;
-    padding-top: 0;
-  }
-}
-.jumbotron {
-  background-image: url(https://ww3.sinaimg.cn/large/006tKfTcgy1fg79vvnwipj31kw0mr4qp.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 110px;
-  background-position: center -0px;
-  margin: 0 -15px 0;
-  color: #fff;;
-  position: relative;
-  height: 500px;
-  letter-spacing: 2px;
+    color: #fff;
+    height: 500px;
+    overflow: hidden;
 
-  &::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: transparentize(#000, .95);//调整蒙版的颜色和透明度
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .text-content {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+    .jumbotron {
+        padding-bottom: 110px;
+        margin: 0 -15px;
+        border-radius: 0;
+        padding-top: 0;
+    }
+}
+
+.jumbotron {
+    background-image: url("https://ww3.sinaimg.cn/large/006tKfTcgy1fg79vvnwipj31kw0mr4qp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 110px;
+    background-position: center -0px;
+    margin: 0 -15px;
+    color: #fff;
+    position: relative;
+    height: 500px;
+    letter-spacing: 2px;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: transparentize(#000, .95); //调整蒙版的颜色和透明度
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .text-content {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .jumbotron-title {
-	color: #fff !important;
-  text-align: center;
-  padding: 125px 20px 0;
-  font-size: 40px !important;
-  text-align: center;
-  line-height: 1.5;
+    color: #fff !important;
+    text-align: center;
+    padding: 125px 20px 0;
+    font-size: 40px !important;
+    text-align: center;
+    line-height: 1.5;
 }
+
 .jumbotron-slogan {
-	color: #fff;
-  margin: 44px auto 0;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
+    color: #fff;
+    margin: 44px auto 0;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
 }
+
 .jumbotron-lead {
-  margin-top: 40px;
-  margin-bottom: 230px;
-  text-align: center;
-  color: white;
+    margin-top: 40px;
+    margin-bottom: 230px;
+    text-align: center;
+    color: white;
 }
