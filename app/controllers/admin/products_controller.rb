@@ -38,7 +38,7 @@ class Admin::ProductsController < ApplicationController
 
     if params[:photos] != nil
       @product.photos.destroy_all
-      params[:photos]['image'].each do |a|
+      params[:photos]['avatar'].each do |a|
         @picture = @product.photos.create(:image => a)
       end
       @product.update(product_params)
