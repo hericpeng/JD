@@ -37,18 +37,20 @@ class Admin::ProductsController < ApplicationController
     @product.category_id = params[:category_id]
 
     if params[:photos] != nil
-      @product.photos.destroy_all
-      params[:photos]['avatar'].each do |a|
-        @picture = @product.photos.create(:image => a)
+          @product.photos.destroy_all #need to destroy old pics first
+          params[:photos]['avatar'].each do |a|
+           @picture = @product.photos.create(:avatar => a)
+        end
       end
-      @product.update(product_params)
-      redirect_to admin_products_path
+       if params[:prints] != nil
+           @product.prints.destroy_all #need to destroy old pics first
 
-    elsif @product.update(product_params)
-      redirect_to admin_products_path
-    else
-      render :edit
-    end
+           params[:prints]['avatar'].each do |a|
+           @picnip = @product.prints.create(:avatar => a)
+         end
+       end
+        @product.update(product_params)
+        redirect_to admin_products_path
   end
 
   private
