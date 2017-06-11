@@ -121,7 +121,7 @@
   <div class="container">
 <% if @products.length > 0 %>
     <!--=== 商品列表 ===-->
-    <div class="row ">
+    <div class="row "style="height:500px !important;">
         <% @products.each_with_index do |product, index| %>
             <div class=" col-xs-12 col-sm-2 col-md-3 product-content wow fadeInUp" data-wow-delay="0.4s">
                 <%= link_to product_path(product) do %>
@@ -141,7 +141,7 @@
                       <%= link_to("", quit_favorite_product_path(product),method: :post,  class: "fa fa-heart", style: "color:red;") %>
                     <% end %>
                     <!-- 商品名称 -->
-                    <ul><%= link_to(product.title , product_path(product)) %></ul>
+                    <ul ><%= link_to(product.title , product_path(product)) %></ul>
                     <!-- 商品价格 -->
                     <ul>￥<%= product.price %></ul>
                 </div>
