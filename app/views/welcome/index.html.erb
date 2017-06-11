@@ -425,7 +425,39 @@
         </div>
     </div>
 </div>
+<div class="lp-action tc pr">
+		<div class="text-content pa pt60 pb600">
 
+			<p class="mt60 wow zoomIn" data-wow-duration=".5s">
+				<a class="btn-lg lp-b-btn bc"  href="/products">立刻开始</a>
+			</p>
+		</div>
+	</div>
+
+	<style>
+	.lp-action {
+	background: url('https://ww1.sinaimg.cn/large/006tKfTcgy1fghkyx3i6bj31kw08kqrv.jpg') center center no-repeat;
+	height: 300px;
+	.text-content {
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 10;
+	}
+	p {
+		color: #fff;
+	}
+	&::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: transparentize(#000, .45);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+	</style>
 <!-- navbar的js效果 -->
 <!-- <script>
         $(document).ready(function(){
