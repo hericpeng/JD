@@ -133,8 +133,11 @@
 
 .jumbotron {
     background-image: url("https://ww3.sinaimg.cn/large/006tKfTcgy1fg79vvnwipj31kw0mr4qp.jpg");
+    // background-image: url("https://ww1.sinaimg.cn/large/006tKfTcgy1fghdpmecptj31kw0ntkjm.jpg");
+
+
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     padding-bottom: 110px;
     background-position: center -0px;
     margin: 0 -15px;
@@ -147,7 +150,7 @@
         content: "";
         width: 100%;
         height: 100%;
-        background-color: transparentize(#000, .95); //调整蒙版的颜色和透明度
+        background-color: transparentize(#fff, .95); //调整蒙版的颜色和透明度
         position: absolute;
         top: 0;
         left: 0;
