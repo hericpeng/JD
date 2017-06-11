@@ -72,6 +72,22 @@ $(document).on('turbolinks:load', function() {
   });
 });
 
+//======快速回到页面顶端功能=======
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 700) {
+    $(".goTop").fadeIn(100);
+  } else {
+    $(".goTop").fadeOut(200);
+  }
+
+    $(".goTop").click(
+    function() {
+      $('html,body').animate({scrollTop: 0}, 300);
+    });
+})
+//======快速回到页面顶端功能=======
+
+
 // // 下拉时显示「顶部导航栏」和「侧边栏」
 // var $header = $('.header')
 // var $sidebar = $('#sidebar')

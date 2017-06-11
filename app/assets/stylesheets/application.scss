@@ -147,3 +147,32 @@ a:hover {
     z-index: 10; // 让消息显示在最上面
     border-radius: 0;
 }
+
+//———————快速回到页面顶端功能—————————
+.goTop {
+  height: 35px;
+  width: 35px;
+  top: 75%;
+  right: 35px;
+  position: fixed;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #666;
+
+  span {
+    color: #000;
+    font-size: 20px;
+          position: absolute;
+    top: 7px;
+    left: 8px;
+  }
+}
+
+.goTop:hover {
+  background-color: #f0f0f0;
+
+  span{
+    color: #eb5424;
+  }
+}
+//————————————————
